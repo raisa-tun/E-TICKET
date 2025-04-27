@@ -29,80 +29,6 @@
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="libraries\assets\css\style.css">
     <link rel="stylesheet" type="text/css" href="libraries\assets\css\jquery.mCustomScrollbar.css">
-    <style>
-        @media only screen and(max-width: 745px) {
-            .navbar-associate {
-                width: 100%;
-                max-width: 200px;
-                margin: 0 auto;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        }
-
-        @media only screen and (min-width: 992px) and (max-width: 1176px) {
-            .col-lg-2 {
-                flex: 0 0 20% !important;
-                max-width: 20% !important;
-
-            }
-
-            .col-lg-10 {
-                flex: 0 0 80% !important;
-                max-width: 80% !important;
-
-            }
-
-        }
-
-        .navbar-associate {
-
-            padding-top: 10px;
-        }
-
-        .btn {
-            margin-right: 45px;
-        }
-
-        img {
-            padding-left: 40px;
-            height: 35px;
-            width: 190px
-        }
-
-        #modal-backdrop {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            /* semi-transparent black */
-            z-index: 999;
-            /* behind modal but above other content */
-        }
-
-        .md-modal {
-            width:100%;
-            background-color: white;
-            z-index: 1000;
-            display:flex;
-            height:800px
-
-            /* modal on top of backdrop */
-        }
-        .md-content{
-            
-            width:100%;
-            display:flex;
-            justify-content:center;
-            align-items: center;
-            
-
-        }
-        
-    </style>
 </head>
 <!-- Menu sidebar static layout -->
 
@@ -151,26 +77,15 @@
 
             <nav class="navbar header-navbar pcoded-header">
                 <div class="navbar-wrapper">
-                    @include('admin.layouts.components.header_nav')
-                    <div class="row section-separator">
-
-
-                        <div class="col-lg-2 navbar-logo">
-
-                            <a class="mobile-menu" id="mobile-collapse" href="#!">
-                                <i class="feather icon-menu"></i>
-                            </a>
-
-                            <a class="navbar-brand page-scroll" href="#main"><img src="{{ asset('assets/images/logo.png') }}" alt="adminity Logo"></a>
-
-                        </div>
-                        <div class="col-lg-10 col-md-12 text-lg-end text-right navbar-associate">
-                            <!-- <a href="">Create more bus schedule</a>-->
-                            <button type='button' class="btn btn-info btn-outline-info waves-effect md-trigger" data-modal="modal-12">Create More Schedule</button>
-
-
-                        </div>
-
+                @include('admin.layouts.components.header_nav')
+                    <div class="navbar-logo">
+                        <a class="mobile-menu" id="mobile-collapse" href="#!">
+                            <i class="feather icon-menu"></i>
+                        </a>
+                        <a href="">
+                           Show More
+                        </a>
+                       
                     </div>
 
 
@@ -183,12 +98,11 @@
                     @include('admin.layouts.components.sidenav')
                     <div class="pcoded-content">
                         <div class="pcoded-inner-content">
-                            <div class="main-body"> 
+                            <div class="main-body">
                                 <div class="page-wrapper">
                                     <div class="page-body">
                                         <div class="row">
-                                            <!--Modal-->
-                                            @include('admin.layouts.components.form_modal')
+
                                             <!-- statustic-card start -->
                                             @include('admin.layouts.components.current_info')
                                             <!-- statustic-card end -->
@@ -303,8 +217,16 @@
     <script type="text/javascript" src="{{asset('libraries\assets\js\script.js')}}"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
+        gtag('config', 'UA-23581568-13');
+    </script>
 </body>
 
 </html>

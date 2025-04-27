@@ -81,6 +81,7 @@
     <script type="text/javascript" src="assets\js\plugins.js"></script>
     <script type="text/javascript" src="assets\js\menu.js"></script>
     <script type="text/javascript" src="assets\js\custom.js"></script>
+    @include('user.layouts.components.user_login_modal')
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
-        
+        <a class="navbar-brand page-scroll" href="#main"><img src="{{ asset('assets/images/logo.png') }}" style="height:40px;width:200px" alt="adminity Logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

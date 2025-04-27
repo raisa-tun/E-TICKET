@@ -20,7 +20,13 @@
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#reviews">Edit Info</a>
                 </li>
-
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" id="loginTrigger" href="#reviews">Login</a>
+                </li>
+                
                 @if(auth()->guard('admin')->check())
                 <li class="nav-item">
                     <a class="nav-link" onclick="event.preventDefault();
@@ -31,9 +37,7 @@
                     </form>
                 </li>
                 @endif
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
+                
             </ul>
         </div>
     </div>

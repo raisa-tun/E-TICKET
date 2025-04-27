@@ -16,6 +16,8 @@
     <meta name="description" content="#">
     <meta name="keywords" content="Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
     <meta name="author" content="#">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <!-- Favicon icon -->
     <link rel="icon" href="libraries\assets\images\favicon.ico" type="image/x-icon">
     <!-- Google font-->
@@ -29,6 +31,7 @@
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="libraries\assets\css\style.css">
     <link rel="stylesheet" type="text/css" href="libraries\assets\css\jquery.mCustomScrollbar.css">
+    <script type="text/javascript" src="{{asset('libraries\bower_components\jquery\js\jquery.min.js')}}"></script>
     <style>
         @media only screen and(max-width: 745px) {
             .navbar-associate {
@@ -187,35 +190,13 @@
                                 <div class="page-wrapper">
                                     <div class="page-body">
                                         <div class="row">
-                                            <!--Modal-->
-                                            @include('admin.layouts.components.form_modal')
-                                            <!-- statustic-card start -->
-                                            @include('admin.layouts.components.current_info')
-                                            <!-- statustic-card end -->
-
-                                            <!-- statustic-card start -->
-                                            @include('admin.layouts.components.monthly_view')
-
-                                            <!-- statustic-card start -->
-                                            @include('admin.layouts.components.feeds')
-                                            <!-- income start -->
-                                            @include('admin.layouts.components.income_statistic')
-                                            @include('admin.layouts.components.invoice')
-                                            <!-- income end -->
-
-                                            <!-- ticket and update start -->
-                                            @include('admin.layouts.components.recent_ticket_info')
-
-                                            <!-- ticket and update end -->
-
-                                            <!-- latest activity end -->
-                                            @include('admin.layouts.components.latest_updates')
-
-                                            <!-- latest activity end -->
+                                           
+                                            @include('layouts.components.list')
                                         </div>
                                     </div>
                                 </div>
 
+                                
                                 <div id="styleSelector">
 
                                 </div>
@@ -272,7 +253,7 @@
 <![endif]-->
     <!-- Warning Section Ends -->
     <!-- Required Jquery -->
-    <script type="text/javascript" src="{{asset('libraries\bower_components\jquery\js\jquery.min.js')}}"></script>
+    
 
     <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
     <script type="text/javascript" src="{{asset('libraries\bower_components\popper.js\js\popper.min.js')}}"></script>

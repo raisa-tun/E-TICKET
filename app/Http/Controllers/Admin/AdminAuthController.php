@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use App\Models\User;
 
 class AdminAuthController extends Controller
 {
@@ -43,5 +44,19 @@ class AdminAuthController extends Controller
         Session::flush();
         Session::put('Success', 'You are logout successfully');
         return redirect('/');
+    }
+    
+    public function store(Request $request){
+
+        User::create($request,[
+     
+            'user_name'=> $request->user_name,
+            'email' => $request->email,
+            'password'=> $request->password,
+            'phone_number'=>$request->phone_number,
+            'address'=>$request->address
+        ])->save();
+
+        return redirect('/')->with('success',"You're successfully created an account");
     }
 }
