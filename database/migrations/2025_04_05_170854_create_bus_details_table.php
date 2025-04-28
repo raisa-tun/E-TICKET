@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('start_point')->nullable();
             $table->string('end_point')->nullable();
             $table->string('arrival_time')->nullable();
-            $table->string('ac/non-ac')->nullable();
+            $table->string('ac_or_non_ac')->nullable();
             $table->timestamps();
         });
     }

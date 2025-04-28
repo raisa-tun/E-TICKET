@@ -1,24 +1,23 @@
 <div class="client-section">
                 <div class="container text-center">
                     <div class="clients owl-carousel owl-theme">
-                        <div class="single">
-                            <img src="assets\logos\logo1.png" alt="">
+                        <div class="single" data-wow-delay="0.2s">
+                            <h3>bkash</h3>
+                           <!-- <img src= "" alt="bkash">-->
                         </div>
-                        <div class="single">
-                            <img src="assets\logos\logo2.png" alt="">
+                        <div class="single" data-wow-delay="0.2s">
+                        <h3>roket</h3>
+                            <!-- <img src= "" alt="bkash">-->
                         </div>
-                        <div class="single">
-                            <img src="assets\logos\logo3.png" alt="">
+                        <div class="single" data-wow-delay="0.2s">
+                        <h3>nagad</h3>
+                           <!-- <img src= "" alt="bkash">-->
                         </div>
-                        <div class="single">
-                            <img src="assets\logos\logo4.png" alt="">
+                        <div class="single" data-wow-delay="0.2s">
+                        <h3>dutchBangla</h3>
+                            <!-- <img src= "" alt="bkash">-->
                         </div>
-                        <div class="single">
-                            <img src="assets\logos\logo6.png" alt="">
-                        </div>
-                        <div class="single">
-                            <img src="assets\logos\logo7.png" alt="">
-                        </div>
+                       
                     </div>
                 </div>
             </div>

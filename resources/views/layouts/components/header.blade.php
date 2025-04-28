@@ -9,22 +9,20 @@
             </ul>
             <ul class="navbar-nav my-2 my-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#main">Home</a>
+                    <a class="nav-link page-scroll" href="/">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#services">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#features">Bus Schedule</a>
+                    <a class="nav-link page-scroll" href="{{route('bus_schedule.index')}}">Bus Schedule</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#reviews">Edit Info</a>
-                </li>
+               
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" id="loginTrigger" href="#reviews">Login</a>
+                    <a class="nav-link page-scroll" id="loginTrigger">Login</a>
                 </li>
                 
                 @if(auth()->guard('admin')->check())

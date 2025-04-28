@@ -29,6 +29,7 @@
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="libraries\assets\css\style.css">
     <link rel="stylesheet" type="text/css" href="libraries\assets\css\jquery.mCustomScrollbar.css">
+    
     <style>
         @media only screen and(max-width: 745px) {
             .navbar-associate {

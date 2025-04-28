@@ -4,9 +4,9 @@
                     <div class="row  justify-content-md-center">
                         <div class="col-md-8">
                             <div class="services-content">
-                                <h1 class="wow fadeInUp" data-wow-delay="0s">We take care our products for more feature rich</h1>
+                                <h1 class="wow fadeInUp" data-wow-delay="0s">We take care our Customers</h1>
                                 <p class="wow fadeInUp" data-wow-delay="0.2s">
-                                    Adminty is one of the finest Admin dashboard template in its category. Premium admin dashboard with high end feature rich possibilities.
+                                    E-ticket is one of the perfect platform to purchase online ticket.
                                 </p>
                                 @if (session('success'))
                                 <div class="alert alert-success">

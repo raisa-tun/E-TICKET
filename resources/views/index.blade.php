@@ -41,7 +41,7 @@
            @include('layouts.components.upper_section')
            @include('layouts.components.services')
            @include('layouts.components.instruction')
-           @include('layouts.components.frequent_routes')
+          @include('layouts.components.frequent_routes')
 
 
             <!--<div class="features-section">
@@ -62,7 +62,7 @@
             <!-- Client Section -->
             @include('layouts.components.payments')
             <!-- Subscribe Form -->
-            @include('layouts.components.contact')
+           <!-- @include('layouts.components.contact')-->
             <!-- Footer Section -->
             @include('layouts.components.footer')
             <!-- Scroll To Top -->

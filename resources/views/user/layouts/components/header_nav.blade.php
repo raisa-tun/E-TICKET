@@ -17,9 +17,7 @@
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#features">Bus Schedule</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#reviews">Edit Info</a>
-                </li>
+                
 
                 @if(auth()->guard('admin')->check())
                 <li class="nav-item">

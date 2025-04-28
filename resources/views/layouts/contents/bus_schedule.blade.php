@@ -167,12 +167,7 @@
                             <a class="navbar-brand page-scroll" href="#main"><img src="{{ asset('assets/images/logo.png') }}" alt="adminity Logo"></a>
 
                         </div>
-                        <div class="col-lg-10 col-md-12 text-lg-end text-right navbar-associate">
-                            <!-- <a href="">Create more bus schedule</a>-->
-                            <button type='button' class="btn btn-info btn-outline-info waves-effect md-trigger" data-modal="modal-12">Create More Schedule</button>
-
-
-                        </div>
+                        
 
                     </div>
 

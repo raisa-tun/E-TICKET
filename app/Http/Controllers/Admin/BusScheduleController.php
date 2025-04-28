@@ -15,14 +15,13 @@ class BusScheduleController extends Controller
     public function index()
     {
         //
-        $bus_data= Bus_overview::with('details')->get();
+        $bus_data = Bus_overview::with('details')->get();
         //dd($bus_data->id,$bus_data->details);
-      //  foreach($bus_data->details as $bus_details){
+        //  foreach($bus_data->details as $bus_details){
         //dd($bus_details->code_no);
 
-       // }
-        return view('layouts.contents.bus_schedule',compact('bus_data'));
-
+        // }
+        return view('layouts.contents.bus_schedule', compact('bus_data'));
     }
 
     /**
@@ -42,25 +41,24 @@ class BusScheduleController extends Controller
         //dd($request);
         $bus_overview = Bus_overview::create([
 
-            'bus_brand_name'=> $request->bus_brand_name,
-            'total_bus_no'=> $request->total_bus_no,
-            'available_bus_no'=> $request->available_bus_no
+            'bus_brand_name' => $request->bus_brand_name,
+            'total_bus_no' => $request->total_bus_no,
+            'available_bus_no' => $request->available_bus_no
         ]);
 
         $bus_overview->details()->create([
-            'code_no'=>$request->code_no,
-            'total_seats'=>$request->total_seats,
-            'price'=>$request->price,
-            'available_seats'=>$request->available_seats,
-            'starting_point'=>$request->starting_point,
-            'end_point'=>$request->end_point,
-            'departure_time'=>$request->departure_time,
-            'arrival_time'=>$request->arrival_time,
-            'ac_or_non_ac'=>$request->ac_or_non_ac,
-            
+            'code_no' => $request->code_no,
+            'total_seats' => $request->total_seats,
+            'price' => $request->price,
+            'available_seats' => $request->available_seats,
+            'starting_point' => $request->starting_point,
+            'end_point' => $request->end_point,
+            'departure_time' => $request->departure_time,
+            'arrival_time' => $request->arrival_time,
+            'ac_or_non_ac' => $request->ac_or_non_ac,
+
         ]);
         return redirect('/admindashboard');
-
     }
 
     /**
@@ -85,19 +83,18 @@ class BusScheduleController extends Controller
     public function update(Request $request, string $id)
     {
         //
-       // dd("kjhks");
+        // dd("kjhks");
         $bus_schedule = Bus_overview::with('details')->findOrFail($id);
-        $allowed = ['bus_brand_name','total_bus_no','available_bus_no'];
-        if(!in_array($request->field,$allowed)){
-          $first_bus_details= $bus_schedule->details->first();  
-          if ($first_bus_details) {
-            $first_bus_details->{$request->field} = $request->value;
-            $first_bus_details->save();
+        $allowed = ['bus_brand_name', 'total_bus_no', 'available_bus_no'];
+        if (!in_array($request->field, $allowed)) {
+            $first_bus_details = $bus_schedule->details->first();
+            if ($first_bus_details) {
+                $first_bus_details->{$request->field} = $request->value;
+                $first_bus_details->save();
+            } else {
+                return response()->json(['error' => 'No bus details found for this bus overview.'], 404);
+            }
         } else {
-            return response()->json(['error' => 'No bus details found for this bus overview.'], 404);
-        }
-        }
-        else{
             $bus_schedule->{$request->field} = $request->value;
             $bus_schedule->save();
         }
@@ -111,5 +108,12 @@ class BusScheduleController extends Controller
     public function destroy(string $id)
     {
         //
+        $bus = Bus_overview::find($id);
+        if ($bus) {
+            $bus->delete();
+            return response()->json(['success' => 'Bus deleted successfully.']);
+        } else {
+            return response()->json(['success' => 'Bus not found.'], 404);
+        }
     }
 }

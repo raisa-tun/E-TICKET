@@ -3,8 +3,8 @@
                                                     <div class="card-block">
                                                         <div class="row align-items-center">
                                                             <div class="col">
-                                                                <p class="m-b-5">New Customer</p>
-                                                                <h4 class="m-b-0">852</h4>
+                                                                <p class="m-b-5">New booked tickets</p>
+                                                                <h4 class="m-b-0">10</h4>
                                                             </div>
                                                             <div class="col col-auto text-right">
                                                                 <i class="feather icon-user f-50 text-c-yellow"></i>
@@ -19,7 +19,7 @@
                                                         <div class="row align-items-center">
                                                             <div class="col">
                                                                 <p class="m-b-5">Income</p>
-                                                                <h4 class="m-b-0">$5,852</h4>
+                                                                <h4 class="m-b-0">BDT</h4>
                                                             </div>
                                                             <div class="col col-auto text-right">
                                                                 <i class="feather icon-credit-card f-50 text-c-green"></i>
@@ -48,8 +48,8 @@
                                                     <div class="card-block">
                                                         <div class="row align-items-center">
                                                             <div class="col">
-                                                                <p class="m-b-5">Orders</p>
-                                                                <h4 class="m-b-0">$5,242</h4>
+                                                                <p class="m-b-5">Booked</p>
+                                                                <h4 class="m-b-0"></h4>
                                                             </div>
                                                             <div class="col col-auto text-right">
                                                                 <i class="feather icon-shopping-cart f-50 text-c-blue"></i>

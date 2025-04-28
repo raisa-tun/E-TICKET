@@ -26,7 +26,7 @@ Route::get('/adminlogin', function () {
 Route::get('/userlogin', function () {
     return view('user.layouts.components.user_login_modal');
 });
-Route::resource('/bus_schedule',BusScheduleController::class);
+Route::resource('bus_schedule',BusScheduleController::class);
 Route::post('/adminLogin',[AdminAuthController::class,'auth'])->name('adminLogin');
 Route::post('/userLogin',[UserAuthController::class,'auth'])->name('userLogin');
 Route::post('/userRegister',[UserAuthController::class,'register'])->name('userRegister');
