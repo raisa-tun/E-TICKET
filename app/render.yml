@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: e-ticket
+    env: php
+    plan: free
+    buildCommand: composer install --optimize-autoloader --no-dev
+    startCommand: php artisan serve --host 0.0.0.0 --port 10000
+    rootDir: .
+    autoDeploy: true
