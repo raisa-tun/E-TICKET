@@ -2,8 +2,30 @@ services:
   - type: web
     name: e-ticket
     env: php
-    plan: free
-    buildCommand: composer install --optimize-autoloader --no-dev
-    startCommand: php artisan serve --host 0.0.0.0 --port 10000
-    rootDir: .
-    autoDeploy: true
+    buildCommand: |
+      cp .env.example .env
+      composer install --no-dev --optimize-autoloader
+    startCommand: php artisan serve --host=0.0.0.0 --port=10000
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_KEY
+        value: <your-app-key-here>  # Make sure to generate a Laravel app key if not done yet.
+      - key: DB_CONNECTION
+        value: mysql
+      - key: DB_HOST
+        value: mysql-db  # The name of the MySQL service, referenced below
+      - key: DB_DATABASE
+        value: <your-database-name>
+      - key: DB_USERNAME
+        value: <your-database-username>
+      - key: DB_PASSWORD
+        value: <your-database-password>
+
+  - type: database
+    name: mysql-db  # This is the name you’ll reference in DB_HOST
+    env: mysql
+    plan: starter  # Choose the plan based on your needs (e.g., starter, basic, etc.)
+    databaseName: <your-database-name>
+    username: <your-database-username>
+    password: <your-database-password>
