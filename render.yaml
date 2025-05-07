@@ -4,6 +4,7 @@ services:
     env: php
     plan: free  # or starter, depending on your needs
     buildCommand: |
+      apt-get update && apt-get install -y php-mysql
       composer install --no-dev --optimize-autoloader
       npm install
       npm run build
