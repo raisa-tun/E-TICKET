@@ -40,3 +40,6 @@ Route::group(['middleware' => 'auth'], function(){
     Route::get('/user_dashboard',[UserAuthController::class,'index'])->name('user');
     Route::post('user_logout', [UserAuthController::class, 'userLogOut'])->name('userLogout');
 });
+Route::get('/check-pdo', function () {
+    return extension_loaded('pdo_mysql') ? 'PDO MySQL is installed' : 'PDO MySQL is NOT installed';
+});
