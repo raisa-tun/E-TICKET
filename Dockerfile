@@ -1,7 +1,6 @@
-# Use PHP 8.2 with Apache
 FROM php:8.2-apache
 
-# Install required PHP extensions and system utilities
+# Install PHP extensions and system utilities
 RUN apt-get update && apt-get install -y \
     unzip \
     git \
@@ -11,7 +10,14 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     libonig-dev \
     libxml2-dev \
-    && docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath zip gd
+    && docker-php-ext-install \
+    pdo_mysql \
+    mbstring \
+    exif \
+    pcntl \
+    bcmath \
+    zip \
+    gd
 
 # Enable Apache mod_rewrite
 RUN a2enmod rewrite
@@ -21,9 +27,6 @@ WORKDIR /var/www/html
 
 # Copy application files
 COPY . .
-# Install system dependencies and PHP extensions BEFORE composer
-RUN apt-get update && apt-get install -y unzip git libzip-dev libpng-dev libjpeg-dev libfreetype6-dev \
-    && docker-php-ext-install pdo_mysql zip gd
 
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
@@ -40,5 +43,5 @@ RUN sed -i 's!/var/www/html!/var/www/html/public!g' /etc/apache2/sites-available
 # Expose port 80
 EXPOSE 80
 
-# Start Apache in the foreground
+# Start Apache in foreground
 CMD ["apache2-foreground"]
