@@ -79,8 +79,8 @@
     <script type="text/javascript" src="{{asset('assets\js\jquery-2.1.1.js')}}"></script>
     <script type="text/javascript" src="{{asset('assets\js\bootstrap.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('assets\js\plugins.js')}}"></script>
-    <script type="text/javascript" src="{{asset('assets\js\menu.js}}"></script>
-    <script type="text/javascript" src="{{asset('assets\js\custom.js}}"></script>
+    <script type="text/javascript" src="{{asset('assets\js\menu.js')}}"></script>
+   <!-- <script type="text/javascript" src="{{asset('assets\js\custom.js')}}"></script>-->
     @include('user.layouts.components.user_login_modal')
 </body>
 
