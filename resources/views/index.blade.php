@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Landing page template for creative dashboard">
     <meta name="keywords" content="Landing page template">
-    <!-- Favicon icon -->
-    <link rel="icon" href="{{ asset('assets/logos/favicon.ico') }}" type="image/x-icon" sizes="16x16">
+    <!-- Favicon icon 
+    <link rel="icon" href="{{ asset('assets/logos/favicon.ico') }}" type="image/x-icon" sizes="16x16">-->
     <!-- Bootstrap -->
     <link href="{{asset('assets\css\bootstrap.min.css')}}" rel="stylesheet" type="text/css" media="all">
     <!-- Font -->
@@ -76,11 +76,11 @@
     <!-- Wrapper-->
 
     <!-- Jquery and Js Plugins -->
-    <script type="text/javascript" src="{{asset('assets\js\jquery-2.1.1.js')}}"></script>
-    <script type="text/javascript" src="{{asset('assets\js\bootstrap.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('assets\js\plugins.js')}}"></script>
-    <script type="text/javascript" src="{{asset('assets\js\menu.js')}}"></script>
-    <script type="text/javascript" src="{{asset('assets\js\custom.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/js/jquery-2.1.1.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/js/bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/js/plugins.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/js/menu.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/js/custom.js')}}"></script>
     @include('user.layouts.components.user_login_modal')
 </body>
 

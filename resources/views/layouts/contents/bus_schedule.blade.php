@@ -18,8 +18,8 @@
     <meta name="author" content="#">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <!-- Favicon icon -->
-    <link rel="icon" href="{{asset('libraries/assets/images/favicon.ico')}}" type="image/x-icon">
+    <!-- Favicon icon 
+    <link rel="icon" href="{{asset('libraries/assets/images/favicon.ico')}}" type="image/x-icon">-->
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
     <!-- Required Fremwork -->
@@ -253,15 +253,15 @@
     <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
     <script type="text/javascript" src="{{asset('libraries\bower_components\popper.js\js\popper.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('libraries\bower_components\bootstrap\js\bootstrap.min.js')}}"></script>
-   <!-- jquery slimscroll js 
+   <!-- jquery slimscroll js -->
     <script type="text/javascript" src="{{asset('libraries\bower_components\jquery-slimscroll\js\jquery.slimscroll.js')}}"></script>
-     modernizr js 
+    <!-- modernizr js -->
     <script type="text/javascript" src="{{asset('libraries\bower_components\modernizr\js\modernizr.js')}}"></script>
     <script type="text/javascript" src="{{asset('libraries\bower_components\modernizr\js\css-scrollbars.js')}}"></script>
-     Chart js 
+    <!-- Chart js -->
     <script type="text/javascript" src="{{asset('libraries\bower_components\chart.js\js\Chart.js')}}"></script>
-    Google map js 
-   <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js')}}"></script>
+   <!-- Google map js -->
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js')}}"></script>
     <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true')}}"></script>
     <script type="text/javascript" src="{{asset('libraries\assets\pages\google-maps\gmaps.js')}}"></script>
      gauge js -->
@@ -273,10 +273,10 @@
     <script src="{{asset('libraries\assets\pages\widget\amchart\light.js')}}"></script>-->
     <!-- Custom js -->
     <script src="{{asset('libraries/assets/js/pcoded.min.js')}}"></script>
-    <!--<script src="{{asset('libraries\assets\js\vartical-layout.min.js')}}"></script>
+    <script src="{{asset('libraries\assets\js\vartical-layout.min.js')}}"></script>
     <script src="{{asset('libraries\assets\js\jquery.mCustomScrollbar.concat.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('libraries\assets\pages\dashboard\crm-dashboard.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('libraries\assets\js\script.js')}}"></script>-->
+    <script type="text/javascript" src="{{asset('libraries\assets\js\script.js')}}"></script>
  
 
 
