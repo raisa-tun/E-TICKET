@@ -26,9 +26,9 @@ services:
       - key: DB_CONNECTION
         value: mysql
       - key: DB_HOST
-        value: metro.proxy.rlwy.net
+        value: maglev.proxy.rlwy.net
       - key: DB_PORT
-        value: 59476
+        value: 18816
       - key: DB_DATABASE
         value: railway
       - key: DB_USERNAME
