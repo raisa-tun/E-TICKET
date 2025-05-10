@@ -16,18 +16,18 @@
    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,700,600" rel="stylesheet" type="text/css">-->
     <!-- Animate CSS -->
-    <link rel="stylesheet" href="{{asset('assets/css/animate.css')}}">
+    <link rel="stylesheet" href="{{asset('assets\css\animate.css')}}">
     <!-- Owl Carousel -->
-    <link rel="stylesheet" href="{{asset('assets/css/owl.carousel.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/owl.theme.css')}}">
+    <link rel="stylesheet" href="{{asset('assets\css\owl.carousel.css')}}">
+    <link rel="stylesheet" href="{{asset('assets\css\owl.theme.css')}}">
     <!-- Magnific Popup --> 
-    <link rel="stylesheet" href="{{asset('assets/css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{asset('assets\css\magnific-popup.css')}}">
     <!-- Full Page Animation -->
-    <link rel="stylesheet" href="{{asset('assets/css/animsition.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets\css\animsition.min.css')}}">
     <!-- Ionic Icons -->
-    <link rel="stylesheet" href="{{asset('assets/css/ionicons.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets\css\ionicons.min.css')}}">
     <!-- Main Style css -->
-    <link href="{{asset('assets/css/style.css')}}" rel="stylesheet" type="text/css" media="all">
+    <link href="{{asset('assets\css\style.css')}}" rel="stylesheet" type="text/css" media="all">
 </head>
 
 <body>
@@ -76,11 +76,11 @@
     <!-- Wrapper-->
 
     <!-- Jquery and Js Plugins -->
-    <script type="text/javascript" src="{{asset('assets/js/jquery-2.1.1.js')}}"></script>
-    <script type="text/javascript" src="{{asset('assets/js/bootstrap.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('assets/js/plugins.js')}}"></script>
-    <script type="text/javascript" src="{{asset('assets/js/menu.js')}}"></script>
-    <script type="text/javascript" src="{{asset('assets/js/custom.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets\js\jquery-2.1.1.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets\js\bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets\js\plugins.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets\js\menu.js}}"></script>
+    <script type="text/javascript" src="{{asset('assets\js\custom.js}}"></script>
     @include('user.layouts.components.user_login_modal')
 </body>
 
