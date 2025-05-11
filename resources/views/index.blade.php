@@ -11,42 +11,42 @@
     <!-- Favicon icon 
     <link rel="icon" href="{{ asset('assets/logos/favicon.ico') }}" type="image/x-icon" sizes="16x16">-->
     <!-- Bootstrap -->
-    <link href="{{asset('assets\css\bootstrap.min.css')}}" rel="stylesheet" type="text/css" media="all">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
     <!-- Font -->
-   <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,700,600" rel="stylesheet" type="text/css">-->
     <!-- Animate CSS -->
-    <link rel="stylesheet" href="{{asset('assets\css\animate.css')}}">
-    <!-- Owl Carousel -->
+   <!-- <link rel="stylesheet" href="{{asset('assets\css\animate.css')}}">
+     Owl Carousel 
     <link rel="stylesheet" href="{{asset('assets\css\owl.carousel.css')}}">
-    <link rel="stylesheet" href="{{asset('assets\css\owl.theme.css')}}">
-    <!-- Magnific Popup --> 
+    <link rel="stylesheet" href="{{asset('assets\css\owl.theme.css')}}">-->
+    <!-- Magnific Popup 
     <link rel="stylesheet" href="{{asset('assets\css\magnific-popup.css')}}">
-    <!-- Full Page Animation -->
+     Full Page Animation 
     <link rel="stylesheet" href="{{asset('assets\css\animsition.min.css')}}">
-    <!-- Ionic Icons -->
-    <link rel="stylesheet" href="{{asset('assets\css\ionicons.min.css')}}">
+    Ionic Icons 
+    <link rel="stylesheet" href="{{asset('assets\css\ionicons.min.css')}}">-->
     <!-- Main Style css -->
-    <link href="{{asset('assets\css\style.css')}}" rel="stylesheet" type="text/css" media="all">
+    <!--<link href="{{asset('assets\css\style.css')}}" rel="stylesheet" type="text/css" media="all">-->
 </head>
 
 <body>
 
     <div class="wrapper animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="1000" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">
         <div class="container">
-        @include('layouts.components.header')
+            @include('layouts.components.header')
         </div>
         <div class="main" id="main">
             <!-- Main Section-->
-           @include('layouts.components.upper_section')
-           @include('layouts.components.services')
-           @include('layouts.components.instruction')
-          @include('layouts.components.frequent_routes')
+            @include('layouts.components.upper_section')
+            @include('layouts.components.services')
+            @include('layouts.components.instruction')
+            @include('layouts.components.frequent_routes')
 
 
             <!--<div class="features-section">
                  Feature section with flex layout -->
-              <!--  <div class="f-left">
+            <!--  <div class="f-left">
                     <div class="left-content wow fadeInLeft" data-wow-delay="0s">
                         <h2 class="wow fadeInLeft" data-wow-delay="0.1s">We are available for custom work development</h2>
                         <p class="wow fadeInLeft" data-wow-delay="0.2s">
@@ -62,7 +62,7 @@
             <!-- Client Section -->
             @include('layouts.components.payments')
             <!-- Subscribe Form -->
-           <!-- @include('layouts.components.contact')-->
+            <!-- @include('layouts.components.contact')-->
             <!-- Footer Section -->
             @include('layouts.components.footer')
             <!-- Scroll To Top -->
@@ -76,11 +76,16 @@
     <!-- Wrapper-->
 
     <!-- Jquery and Js Plugins -->
-    <script type="text/javascript" src="{{asset('assets\js\jquery-2.1.1.js')}}"></script>
-    <script type="text/javascript" src="{{asset('assets\js\bootstrap.min.js')}}"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script type="text/javascript" src="{{asset('assets\js\bootstrap.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('assets\js\plugins.js')}}"></script>
     <script type="text/javascript" src="{{asset('assets\js\menu.js')}}"></script>
-   <!-- <script type="text/javascript" src="{{asset('assets\js\custom.js')}}"></script>-->
+   <script type="text/javascript" src="{{asset('assets\js\custom.js')}}"></script>-->
+    <!-- Popper JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+    <!-- Bootstrap JS -->
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+    <script src="https://cdn.example.com/library.js"></script>
     @include('user.layouts.components.user_login_modal')
 </body>
 

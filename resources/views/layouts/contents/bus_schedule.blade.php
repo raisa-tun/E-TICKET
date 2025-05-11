@@ -22,16 +22,18 @@
     <link rel="icon" href="{{asset('libraries\assets\images\favicon.ico')}}" type="image/x-icon">-->
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
-    <!-- Required Fremwork -->
-    <link rel="stylesheet" type="text/css" href="{{asset('libraries\bower_components\bootstrap\css\bootstrap.min.css')}}">
-    <!-- radial chart.css -->
-    <link rel="stylesheet" href="{{asset('libraries\assets\pages\chart\radial\css\radial.css')}}" type="text/css" media="all">
-    <!-- feather Awesome -->
-    <link rel="stylesheet" type="text/css" href="{{asset('libraries\assets\icon\feather\css\feather.css')}}">
+    <!-- Required Fremwork 
+    <link rel="stylesheet" type="text/css" href="{{asset('libraries\bower_components\bootstrap\css\bootstrap.min.css')}}">-->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+    <!-- radial chart.css 
+    <link rel="stylesheet" href="{{asset('libraries\assets\pages\chart\radial\css\radial.css')}}" type="text/css" media="all">-->
+    <!-- feather Awesome 
+    <link rel="stylesheet" type="text/css" href="{{asset('libraries\assets\icon\feather\css\feather.css')}}">-->
     <!-- Style.css -->
-    <link rel="stylesheet" type="text/css" href="{{asset('libraries\assets\css\style.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('libraries\assets\css\jquery.mCustomScrollbar.css')}}">
-    <script type="text/javascript" src="{{asset('libraries\bower_components\jquery\js\jquery.min.js')}}"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="{{asset('libraries\assets\css\style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('libraries\assets\css\jquery.mCustomScrollbar.css')}}">-->
+    <link rel="stylesheet" href="https://cdn.example.com/library.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
         @media only screen and(max-width: 745px) {
             .navbar-associate {
@@ -247,9 +249,10 @@
 <![endif]-->
     <!-- Warning Section Ends -->
     <!-- Required Jquery -->
-
-    <script type="text/javascript" src="{{asset('libraries\bower_components\popper.js\js\popper.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('libraries\bower_components\bootstrap\js\bootstrap.min.js')}}"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+    <!-- Bootstrap JS -->
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+    <script src="https://cdn.example.com/library.js"></script>
     <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="{{asset('libraries\bower_components\popper.js\js\popper.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('libraries\bower_components\bootstrap\js\bootstrap.min.js')}}"></script>
@@ -271,12 +274,12 @@
     <script src="{{asset('libraries\assets\pages\widget\amchart\gauge.js')}}"></script>
     <script src="{{asset('libraries\assets\pages\widget\amchart\pie.js')}}"></script>
     <script src="{{asset('libraries\assets\pages\widget\amchart\light.js')}}"></script>-->
-    <!-- Custom js -->
+    <!-- Custom js 
     <script src="{{asset('libraries\assets\js\pcoded.min.js')}}"></script>
     <script src="{{asset('libraries\assets\js\vartical-layout.min.js')}}"></script>
     <script src="{{asset('libraries\assets\js\jquery.mCustomScrollbar.concat.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('libraries\assets\pages\dashboard\crm-dashboard.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('libraries\assets\js\script.js')}}"></script>
+    <script type="text/javascript" src="{{asset('libraries\assets\js\script.js')}}"></script>-->
 
 
 
