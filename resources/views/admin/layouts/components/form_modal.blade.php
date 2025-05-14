@@ -13,7 +13,7 @@
     <script type="text/javascript" src="libraries\bower_components\i18next-xhr-backend\js\i18nextXHRBackend.min.js"></script>
     <script type="text/javascript" src="libraries\bower_components\i18next-browser-languagedetector\js\i18nextBrowserLanguageDetector.min.js"></script>
     <script type="text/javascript" src="libraries\bower_components\jquery-i18next\js\jquery-i18next.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
 <script>
   $(document).ready(function () {
     const $modal = $('#modal-12');
