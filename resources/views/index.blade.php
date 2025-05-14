@@ -31,7 +31,7 @@
     <link rel="stylesheet" type="text/css" href="assets\css\style.css" media="all">
       <!-- Jquery and Js Plugins 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
-    <script src="assets\js\jquery-2.1.1.min.js"></script>
+    <script src="assets\js\jquery-2.1.1.js"></script>
     <script type="text/javascript" src="assets\js\bootstrap.min.js"></script>
     <script type="text/javascript" src="assets\js\plugins.js"></script>
     <script type="text/javascript" src="assets\js\menu.js"></script>

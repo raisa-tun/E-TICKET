@@ -33,7 +33,7 @@
     <link rel="stylesheet" type="text/css" href="libraries\assets\css\style.css">
     <link rel="stylesheet" type="text/css" href="libraries\assets\css\jquery.mCustomScrollbar.css">
     <link rel="stylesheet" type="text/css" href="libraries\assets\css\style2.css">
-    <script src="libraries\assets\js\jquery-2.1.1.min.js"></script>
+    <script src="libraries\assets\js\jquery-2.1.1.js"></script>
     <script type="text/javascript" src="libraries\bower_components\popper.js\js\popper.min.js"></script>
     <script type="text/javascript" src="libraries\bower_components\bootstrap\js\bootstrap.min.js"></script>
       <!-- jquery slimscroll js--> 
