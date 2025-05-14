@@ -209,11 +209,11 @@
     <script src="{{asset('libraries\assets\pages\widget\amchart\light.js')}}"></script>-->
     <!-- Custom js -->
 
-    <script src="{{asset('libraries\assets\js\pcoded.min.js')}}"></script>
-    <script src="{{asset('libraries\assets\js\vartical-layout.min.js')}}"></script>
-    <script src="{{asset('libraries\assets\js\jquery.mCustomScrollbar.concat.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('libraries\assets\pages\dashboard\crm-dashboard.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('libraries\assets\js\script.js')}}"></script>
+    <script src="libraries\assets\js\pcoded.min.js"></script>
+    <script src="libraries\assets\js\vartical-layout.min.js"></script>
+    <script src="libraries\assets\js\jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="libraries\assets\pages\dashboard\crm-dashboard.min.js"></script>
+    <script type="text/javascript" src="libraries\assets\js\script.js"></script>
 
 
 </body>
