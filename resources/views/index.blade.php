@@ -29,11 +29,7 @@
     <link rel="stylesheet" href="assets\css\ionicons.min.css">
     <!-- Main Style css -->
     <link rel="stylesheet" type="text/css" href="assets\css\style.css" media="all">
-   
-</head>
-
-<body>
-    <!-- Jquery and Js Plugins -->
+      <!-- Jquery and Js Plugins -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="assets\js\bootstrap.min.js"></script>
     <script type="text/javascript" src="assets\js\plugins.js"></script>
@@ -44,6 +40,10 @@
     <!-- Bootstrap JS 
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>-->
     <script type="text/javascript" src="assets\js\bootstrap.min.js"></script>
+</head>
+
+<body>
+ 
 
 
 

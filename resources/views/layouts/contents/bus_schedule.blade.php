@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
     <!-- Required Fremwork -->
     <link rel="stylesheet" type="text/css" href="libraries\bower_components\bootstrap\css\bootstrap.min.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+
     <!-- radial chart.css -->
     <link rel="stylesheet" href="libraries\assets\pages\chart\radial\css\radial.css" type="text/css" media="all">
     <!-- feather Awesome -->
@@ -36,6 +36,11 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
      <script type="text/javascript" src="libraries\bower_components\popper.js\js\popper.min.js"></script>
     <script type="text/javascript" src="libraries\bower_components\bootstrap\js\bootstrap.min.js"></script>
+      <!-- jquery slimscroll js--> 
+    <script type="text/javascript" src="libraries\bower_components\jquery-slimscroll\js\jquery.slimscroll.js"></script>
+    <!-- modernizr js -->
+    <script type="text/javascript" src="libraries\bower_components\modernizr\js\modernizr.js"></script>
+    <script type="text/javascript" src="libraries\bower_components\modernizr\js\css-scrollbars.js"></script>
 
 </head>
 <!-- Menu sidebar static layout -->
