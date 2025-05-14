@@ -10,8 +10,9 @@
     <meta name="keywords" content="Landing page template">
     <!-- Favicon icon 
     <link rel="icon" href="{{ asset('assets/logos/favicon.ico') }}" type="image/x-icon" sizes="16x16">-->
-    <!-- Bootstrap -->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+    <!-- Bootstrap 
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>-->
+    <link rel="stylesheet" href="assets\css\bootstrap.min.css">
     <!-- Font -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,700,600" rel="stylesheet" type="text/css">-->
@@ -27,7 +28,7 @@
     <!-- Ionic Icons --> 
     <link rel="stylesheet" href="assets\css\ionicons.min.css">
     <!-- Main Style css -->
-    <link href="assets\css\style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="assets\css\style.css"  media="all">
 </head>
 
 <body>
@@ -85,6 +86,7 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
     <!-- Bootstrap JS 
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>-->
+    <script type="text/javascript" src="assets\js\bootstrap.min.js"></script>
    
     @include('user.layouts.components.user_login_modal')
 </body>

@@ -20,90 +20,17 @@
     <link rel="icon" href="libraries\assets\images\favicon.ico" type="image/x-icon">-->
     <!-- Google font
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">-->
-   <!-- Required Fremwork 
-    <link rel="stylesheet" type="text/css" href="libraries\bower_components\bootstrap\css\bootstrap.min.css">-->
-    <!-- radial chart.css 
-    <link rel="stylesheet" href="libraries\assets\pages\chart\radial\css\radial.css" type="text/css" media="all">-->
-    <!-- feather Awesome 
-    <link rel="stylesheet" type="text/css" href="libraries\assets\icon\feather\css\feather.css">-->
-    <!-- Style.css 
+   <!-- Required Fremwork -->
+    <link rel="stylesheet" type="text/css" href="libraries\bower_components\bootstrap\css\bootstrap.min.css">
+    <!-- radial chart.css -->
+    <link rel="stylesheet" href="libraries\assets\pages\chart\radial\css\radial.css" type="text/css" media="all">
+    <!-- feather Awesome -->
+    <link rel="stylesheet" type="text/css" href="libraries\assets\icon\feather\css\feather.css">
+    <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="libraries\assets\css\style.css">
-    <link rel="stylesheet" type="text/css" href="libraries\assets\css\jquery.mCustomScrollbar.css">-->
-    
-    <style>
-        @media only screen and(max-width: 745px) {
-            .navbar-associate {
-                width: 100%;
-                max-width: 200px;
-                margin: 0 auto;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        }
+    <link rel="stylesheet" type="text/css" href="libraries\assets\css\jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css" href="libraries\assets\css\style2.css">
 
-        @media only screen and (min-width: 992px) and (max-width: 1176px) {
-            .col-lg-2 {
-                flex: 0 0 20% !important;
-                max-width: 20% !important;
-
-            }
-
-            .col-lg-10 {
-                flex: 0 0 80% !important;
-                max-width: 80% !important;
-
-            }
-
-        }
-
-        .navbar-associate {
-
-            padding-top: 10px;
-        }
-
-        .btn {
-            margin-right: 45px;
-        }
-
-        img {
-            padding-left: 40px;
-            height: 35px;
-            width: 190px
-        }
-
-        #modal-backdrop {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            /* semi-transparent black */
-            z-index: 999;
-            /* behind modal but above other content */
-        }
-
-        .md-modal {
-            width:100%;
-            background-color: white;
-            z-index: 1000;
-            display:flex;
-            height:800px
-
-            /* modal on top of backdrop */
-        }
-        .md-content{
-            
-            width:100%;
-            display:flex;
-            justify-content:center;
-            align-items: center;
-            
-
-        }
-        
-    </style>
 </head>
 <!-- Menu sidebar static layout -->
 
@@ -290,18 +217,18 @@
     <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true')}}"></script>
     <script type="text/javascript" src="libraries\assets\pages\google-maps\gmaps.js"></script>-->
     <!-- gauge js -->
-    <script src="{{asset('libraries\assets\pages\widget\gauge\gauge.min.js')}}"></script>
-    <script src="{{asset('libraries\assets\pages\widget\amchart\amcharts.js')}}"></script>
-    <script src="{{asset('libraries\assets\pages\widget\amchart\serial.js')}}"></script>
-    <script src="{{asset('libraries\assets\pages\widget\amchart\gauge.js')}}"></script>
-    <script src="{{asset('libraries\assets\pages\widget\amchart\pie.js')}}"></script>
-    <script src="{{asset('libraries\assets\pages\widget\amchart\light.js')}}"></script>
+    <script src="libraries\assets\pages\widget\gauge\gauge.min.js"></script>
+    <script src="libraries\assets\pages\widget\amchart\amcharts.js"></script>
+    <script src="libraries\assets\pages\widget\amchart\serial.js"></script>
+    <script src="libraries\assets\pages\widget\amchart\gauge.js"></script>
+    <script src="libraries\assets\pages\widget\amchart\pie.js"></script>
+    <script src="libraries\assets\pages\widget\amchart\light.js"></script>
     <!-- Custom js -->
-    <script src="{{asset('libraries\assets\js\pcoded.min.js')}}"></script>
-    <script src="{{asset('libraries\assets\js\vartical-layout.min.js')}}"></script>
-    <script src="{{asset('libraries\assets\js\jquery.mCustomScrollbar.concat.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('libraries\assets\pages\dashboard\crm-dashboard.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('libraries\assets\js\script.js')}}"></script>
+    <script src="libraries\assets\js\pcoded.min.js"></script>
+    <script src="libraries\assets\js\vartical-layout.min.js"></script>
+    <script src="libraries\assets\js\jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="libraries\assets\pages\dashboard\crm-dashboard.min.js"></script>
+    <script type="text/javascript" src="libraries\assets\js\script.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
 

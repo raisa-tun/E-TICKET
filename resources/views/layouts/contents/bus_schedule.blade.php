@@ -28,85 +28,12 @@
     <!-- radial chart.css -->
     <link rel="stylesheet" href="libraries\assets\pages\chart\radial\css\radial.css" type="text/css" media="all">
     <!-- feather Awesome -->
-    <link rel="stylesheet" type="text/css" href="{{asset('libraries\assets\icon\feather\css\feather.css')}}">
+    <link rel="stylesheet" type="text/css" href="libraries\assets\icon\feather\css\feather.css">
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="libraries\assets\css\style.css">
     <link rel="stylesheet" type="text/css" href="libraries\assets\css\jquery.mCustomScrollbar.css">
-    <link rel="stylesheet" href="https://cdn.example.com/library.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
-        @media only screen and(max-width: 745px) {
-            .navbar-associate {
-                width: 100%;
-                max-width: 200px;
-                margin: 0 auto;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        }
+    <link rel="stylesheet" type="text/css" href="libraries\assets\css\style2.css">
 
-        @media only screen and (min-width: 992px) and (max-width: 1176px) {
-            .col-lg-2 {
-                flex: 0 0 20% !important;
-                max-width: 20% !important;
-
-            }
-
-            .col-lg-10 {
-                flex: 0 0 80% !important;
-                max-width: 80% !important;
-
-            }
-
-        }
-
-        .navbar-associate {
-
-            padding-top: 10px;
-        }
-
-        .btn {
-            margin-right: 45px;
-        }
-
-        img {
-            padding-left: 40px;
-            height: 35px;
-            width: 190px
-        }
-
-        #modal-backdrop {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            /* semi-transparent black */
-            z-index: 999;
-            /* behind modal but above other content */
-        }
-
-        .md-modal {
-            width: 100%;
-            background-color: white;
-            z-index: 1000;
-            display: flex;
-            height: 800px
-                /* modal on top of backdrop */
-        }
-
-        .md-content {
-
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-
-        }
-    </style>
 </head>
 <!-- Menu sidebar static layout -->
 
@@ -248,25 +175,25 @@
 </div>
 <![endif]-->
     <!-- Warning Section Ends -->
-    <!-- Required Jquery -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
-    <!-- Bootstrap JS -->
-    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
-    <script src="https://cdn.example.com/library.js"></script>
+    <!-- Required Jquery 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>-->
+    <!-- Bootstrap JS 
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>-->
+   
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="{{asset('libraries\bower_components\popper.js\js\popper.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('libraries\bower_components\bootstrap\js\bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="libraries\bower_components\popper.js\js\popper.min.js"></script>
+    <script type="text/javascript" src="libraries\bower_components\bootstrap\js\bootstrap.min.js"></script>
    <!-- jquery slimscroll js--> 
-    <script type="text/javascript" src="{{asset('libraries\bower_components\jquery-slimscroll\js\jquery.slimscroll.js')}}"></script>
+    <script type="text/javascript" src="libraries\bower_components\jquery-slimscroll\js\jquery.slimscroll.js"></script>
     <!-- modernizr js -->
-    <script type="text/javascript" src="{{asset('libraries\bower_components\modernizr\js\modernizr.js')}}"></script>
-    <script type="text/javascript" src="{{asset('libraries\bower_components\modernizr\js\css-scrollbars.js')}}"></script>
+    <script type="text/javascript" src="libraries\bower_components\modernizr\js\modernizr.js"></script>
+    <script type="text/javascript" src="libraries\bower_components\modernizr\js\css-scrollbars.js"></script>
      Chart js 
-    <script type="text/javascript" src="{{asset('libraries\bower_components\chart.js\js\Chart.js')}}"></script>
+    <script type="text/javascript" src="libraries\bower_components\chart.js\js\Chart.js"></script>
    <!-- Google map js -->
-   <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js')}}"></script>
-    <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true')}}"></script>
-    <script type="text/javascript" src="{{asset('libraries\assets\pages\google-maps\gmaps.js')}}"></script>
+   <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="libraries\assets\pages\google-maps\gmaps.js"></script>
     <!-- gauge js -->
     <!-- <script src="{{asset('libraries\assets\pages\widget\gauge\gauge.min.js')}}"></script>
     <script src="{{asset('libraries\assets\pages\widget\amchart\amcharts.js')}}"></script>
