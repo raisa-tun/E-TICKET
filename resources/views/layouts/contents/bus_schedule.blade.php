@@ -34,14 +34,7 @@
     <link rel="stylesheet" type="text/css" href="libraries\assets\css\jquery.mCustomScrollbar.css">
     <link rel="stylesheet" type="text/css" href="libraries\assets\css\style2.css">
 
-    <script type="text/javascript" src="libraries\bower_components\jquery\js\jquery.min.js"></script>
-    <script type="text/javascript" src="libraries\bower_components\popper.js\js\popper.min.js"></script>
-    <script type="text/javascript" src="libraries\bower_components\bootstrap\js\bootstrap.min.js"></script>
-    <!-- jquery slimscroll js-->
-    <script type="text/javascript" src="libraries\bower_components\jquery-slimscroll\js\jquery.slimscroll.js"></script>
-    <!-- modernizr js -->
-    <script type="text/javascript" src="libraries\bower_components\modernizr\js\modernizr.js"></script>
-    <script type="text/javascript" src="libraries\bower_components\modernizr\js\css-scrollbars.js"></script>
+
 
 
 
@@ -192,13 +185,16 @@
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>-->
 
 
-
+    <script type="text/javascript" src="libraries\bower_components\jquery\js\jquery.min.js"></script>
+    <script type="text/javascript" src="libraries\bower_components\popper.js\js\popper.min.js"></script>
+    <script type="text/javascript" src="libraries\bower_components\bootstrap\js\bootstrap.min.js"></script>
+    
     <!-- jquery slimscroll js-->
     <script type="text/javascript" src="libraries\bower_components\jquery-slimscroll\js\jquery.slimscroll.js"></script>
     <!-- modernizr js -->
     <script type="text/javascript" src="libraries\bower_components\modernizr\js\modernizr.js"></script>
     <script type="text/javascript" src="libraries\bower_components\modernizr\js\css-scrollbars.js"></script>
-    Chart js
+    <!--Chart js-->
     <script type="text/javascript" src="libraries\bower_components\chart.js\js\Chart.js"></script>
     <!-- Google map js -->
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
