@@ -30,6 +30,7 @@
     <link rel="stylesheet" type="text/css" href="libraries\assets\css\style.css">
     <link rel="stylesheet" type="text/css" href="libraries\assets\css\jquery.mCustomScrollbar.css">
     <link rel="stylesheet" type="text/css" href="libraries\assets\css\style2.css">
+    <!--jQuery-->
     <script type="text/javascript" src="libraries\bower_components\jquery\js\jquery.min.js"></script>
     <!--<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
     <script type="text/javascript" src="libraries\bower_components\popper.js\js\popper.min.js"></script>
