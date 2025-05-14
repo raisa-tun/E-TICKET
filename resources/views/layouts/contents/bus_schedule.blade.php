@@ -117,15 +117,6 @@
                                 <div class="page-wrapper">
                                     <div class="page-body">
                                         <div class="row">
-                                            <script type="text/javascript" src="libraries\bower_components\jquery\js\jquery.min.js"></script>
-                                            <script type="text/javascript" src="libraries\bower_components\popper.js\js\popper.min.js"></script>
-                                            <script type="text/javascript" src="libraries\bower_components\bootstrap\js\bootstrap.min.js"></script>
-
-                                            <!-- jquery slimscroll js-->
-                                            <script type="text/javascript" src="libraries\bower_components\jquery-slimscroll\js\jquery.slimscroll.js"></script>
-                                            <!-- modernizr js -->
-                                            <script type="text/javascript" src="libraries\bower_components\modernizr\js\modernizr.js"></script>
-                                            <script type="text/javascript" src="libraries\bower_components\modernizr\js\css-scrollbars.js"></script>
 
                                             @include('layouts.components.list')
                                         </div>
@@ -194,7 +185,15 @@
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>-->
 
 
-
+    <script type="text/javascript" src="libraries\bower_components\jquery\js\jquery.min.js"></script>
+    <script type="text/javascript" src="libraries\bower_components\popper.js\js\popper.min.js"></script>
+    <script type="text/javascript" src="libraries\bower_components\bootstrap\js\bootstrap.min.js"></script>
+    
+    <!-- jquery slimscroll js-->
+    <script type="text/javascript" src="libraries\bower_components\jquery-slimscroll\js\jquery.slimscroll.js"></script>
+    <!-- modernizr js -->
+    <script type="text/javascript" src="libraries\bower_components\modernizr\js\modernizr.js"></script>
+    <script type="text/javascript" src="libraries\bower_components\modernizr\js\css-scrollbars.js"></script>
     <!--Chart js-->
     <script type="text/javascript" src="libraries\bower_components\chart.js\js\Chart.js"></script>
     <!-- Google map js -->
@@ -208,13 +207,13 @@
     <script src="{{asset('libraries\assets\pages\widget\amchart\gauge.js')}}"></script>
     <script src="{{asset('libraries\assets\pages\widget\amchart\pie.js')}}"></script>
     <script src="{{asset('libraries\assets\pages\widget\amchart\light.js')}}"></script>-->
-    <!-- Custom js 
+    <!-- Custom js -->
+
     <script src="{{asset('libraries\assets\js\pcoded.min.js')}}"></script>
     <script src="{{asset('libraries\assets\js\vartical-layout.min.js')}}"></script>
     <script src="{{asset('libraries\assets\js\jquery.mCustomScrollbar.concat.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('libraries\assets\pages\dashboard\crm-dashboard.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('libraries\assets\js\script.js')}}"></script>-->
-
+    <script type="text/javascript" src="{{asset('libraries\assets\js\script.js')}}"></script>
 
 
 </body>
