@@ -20,7 +20,7 @@
     <link rel="icon" href="libraries\assets\images\favicon.ico" type="image/x-icon">-->
     <!-- Google font
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">-->
-   <!-- Required Fremwork -->
+    <!-- Required Fremwork -->
     <link rel="stylesheet" type="text/css" href="libraries\bower_components\bootstrap\css\bootstrap.min.css">
     <!-- radial chart.css -->
     <link rel="stylesheet" href="libraries\assets\pages\chart\radial\css\radial.css" type="text/css" media="all">
@@ -35,6 +35,9 @@
 <!-- Menu sidebar static layout -->
 
 <body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="libraries\bower_components\popper.js\js\popper.min.js"></script>
+    <script type="text/javascript" src="libraries\bower_components\bootstrap\js\bootstrap.min.js"></script>
     <!-- Pre-loader start -->
     <div class="theme-loader">
         <div class="ball-scale">
@@ -111,7 +114,7 @@
                     @include('admin.layouts.components.sidenav')
                     <div class="pcoded-content">
                         <div class="pcoded-inner-content">
-                            <div class="main-body"> 
+                            <div class="main-body">
                                 <div class="page-wrapper">
                                     <div class="page-body">
                                         <div class="row">
@@ -202,15 +205,13 @@
     <!-- Required Jquery 
     <script type="text/javascript" src="{{asset('libraries\bower_components\jquery\js\jquery.min.js')}}"></script>-->
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="libraries\bower_components\popper.js\js\popper.min.js"></script>
-    <script type="text/javascript" src="libraries\bower_components\bootstrap\js\bootstrap.min.js"></script>
+
     <!-- jquery slimscroll js-->
-    <script type="text/javascript" src="libraries\bower_components\jquery-slimscroll\js\jquery.slimscroll.js"></script>-->
+    <script type="text/javascript" src="libraries\bower_components\jquery-slimscroll\js\jquery.slimscroll.js"></script>
     <!-- modernizr js -->
     <script type="text/javascript" src="libraries\bower_components\modernizr\js\modernizr.js"></script>
     <script type="text/javascript" src="libraries\bower_components\modernizr\js\css-scrollbars.js"></script>
-     <!-- Chart js -->
+    <!-- Chart js -->
     <script type="text/javascript" src="libraries\bower_components\chart.js\js\Chart.js"></script>
     <!-- Google map js
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js')}}"></script>

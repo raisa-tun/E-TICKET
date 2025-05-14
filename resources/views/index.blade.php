@@ -17,21 +17,35 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,700,600" rel="stylesheet" type="text/css">-->
     <!-- Animate CSS -->
-   <link rel="stylesheet" href="assets\css\animate.css">
-    <!-- Owl Carousel--> 
+    <link rel="stylesheet" href="assets\css\animate.css">
+    <!-- Owl Carousel-->
     <link rel="stylesheet" href="assets\css\owl.carousel.css">
     <link rel="stylesheet" href="assets\css\owl.theme.css">
-    <!-- Magnific Popup--> 
+    <!-- Magnific Popup-->
     <link rel="stylesheet" href="assets\css\magnific-popup.css">
     <!-- Full Page Animation -->
     <link rel="stylesheet" href="assets\css\animsition.min.css">
-    <!-- Ionic Icons --> 
+    <!-- Ionic Icons -->
     <link rel="stylesheet" href="assets\css\ionicons.min.css">
     <!-- Main Style css -->
-    <link rel="stylesheet" type="text/css" href="assets\css\style.css"  media="all">
+    <link rel="stylesheet" type="text/css" href="assets\css\style.css" media="all">
+   
 </head>
 
 <body>
+    <!-- Jquery and Js Plugins -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="assets\js\bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets\js\plugins.js"></script>
+    <script type="text/javascript" src="assets\js\menu.js"></script>
+    <script type="text/javascript" src="assets\js\custom.js"></script>
+    <!-- Popper JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+    <!-- Bootstrap JS 
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>-->
+    <script type="text/javascript" src="assets\js\bootstrap.min.js"></script>
+
+
 
     <div class="wrapper animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="1000" data-animsition-out-class="fade-out" data-animsition-out-duration="1000">
         <div class="container">
@@ -76,18 +90,8 @@
     </div>
     <!-- Wrapper-->
 
-    <!-- Jquery and Js Plugins -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-     <script type="text/javascript" src="assets\js\bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets\js\plugins.js"></script>
-    <script type="text/javascript" src="assets\js\menu.js"></script>
-    <script type="text/javascript" src="assets\js\custom.js"></script>
-    <!-- Popper JS -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
-    <!-- Bootstrap JS 
-    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>-->
-    <script type="text/javascript" src="assets\js\bootstrap.min.js"></script>
-   
+
+
     @include('user.layouts.components.user_login_modal')
 </body>
 
