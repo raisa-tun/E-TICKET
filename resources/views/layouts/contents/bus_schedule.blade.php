@@ -34,7 +34,9 @@
     <link rel="stylesheet" type="text/css" href="libraries\assets\css\jquery.mCustomScrollbar.css">
     <link rel="stylesheet" type="text/css" href="libraries\assets\css\style2.css">
 
-
+    <script type="text/javascript" src="libraries\bower_components\jquery\js\jquery.min.js"></script>
+    <script type="text/javascript" src="libraries\bower_components\popper.js\js\popper.min.js"></script>
+    <script type="text/javascript" src="libraries\bower_components\bootstrap\js\bootstrap.min.js"></script>
 
 
 
@@ -185,9 +187,7 @@
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>-->
 
 
-    <script type="text/javascript" src="libraries\bower_components\jquery\js\jquery.min.js"></script>
-    <script type="text/javascript" src="libraries\bower_components\popper.js\js\popper.min.js"></script>
-    <script type="text/javascript" src="libraries\bower_components\bootstrap\js\bootstrap.min.js"></script>
+
     
     <!-- jquery slimscroll js-->
     <script type="text/javascript" src="libraries\bower_components\jquery-slimscroll\js\jquery.slimscroll.js"></script>
