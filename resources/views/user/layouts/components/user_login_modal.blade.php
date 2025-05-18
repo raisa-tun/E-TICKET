@@ -35,7 +35,7 @@
         </div>
         <div class="d-flex flex-column text-center" id="authform">
         
-        @include('user.layouts.contents.user_register')
+        @include('user.layouts.contents.user_login_register')
           
           <div class="text-center text-muted delimiter">or use a social network</div>
           <div class="d-flex justify-content-center social-buttons">

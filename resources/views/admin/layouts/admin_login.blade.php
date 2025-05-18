@@ -32,7 +32,7 @@
           <h4>Login</h4>
         </div>
         <div class="d-flex flex-column text-center">
-        <form action = "{{route('adminLogin')}}" method = "post">
+        <form action = "{{route('admin.login')}}" method = "post">
             @csrf
             <div class="form-group">
               <input type="email" class="form-control" name="email" placeholder="Your email address...">

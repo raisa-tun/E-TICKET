@@ -1,4 +1,4 @@
-<form action="{{route('userRegister')}}" method="post">
+<form action="{{route('user.login')}}" method="post">
     @csrf
     <div class="form-group" id="namefield" style="display:none">
         <input type="text" class="form-control" name="user_name" placeholder="Your user name...">
@@ -46,40 +46,50 @@
     <a href="#" id="toggleMode">Switch to Register</a>
 </p>
 <script>
-    let isLogin = true;
+    $(document).ready(function() {
+        
+        let isLogin = true;
 
-    $('#toggleMode').on('click', function(e) {
-        e.preventDefault();
+        $('#toggleMode').on('click', function(e) {
+            e.preventDefault();
 
-        isLogin = !isLogin;
+            isLogin = !isLogin;
 
-        if (isLogin) {
-            $('#namefield').hide();
-            $('#phone_number').hide();
-            $('#address').hide();
-            $('#header_name').text('Login');
-            $('#submitBtn').text('Login');
-            $('#toggleMode').text('Switch to Register');
-        } else {
-            $('#namefield').show();
-            $('#phone_number').show();
-            $('#address').show();
-            $('#header_name').text('Register');
-            $('#submitBtn').text('Register');
-            $('#toggleMode').text('Switch to Login');
-        }
+            if (isLogin) {
+                $('#namefield').hide();
+                $('#phone_number').hide();
+                $('#address').hide();
+                $('#header_name').text('Login');
+                $('#submitBtn').text('Login');
+                $('#toggleMode').text('Switch to Register');
+            } else {
+                $('#namefield').show();
+                $('#phone_number').show();
+                $('#address').show();
+                $('#header_name').text('Register');
+                $('#submitBtn').text('Register');
+                $('#toggleMode').text('Switch to Login');
+            }
 
-        const url = isLogin ? '/userLogin' : '/userRegister';
-        const formdata = $(this).serialize();
 
-        axios.post(url, formdata).then(response => {
+        });
+        $('form').on('submit', function(e) {
+            e.preventDefault();
 
-                console.log(response.data);
-                alert('success!');
-            })
-            .catch(error => {
-                console.log(error.response.data);
-                alert("Error Occured!");
-            });
+            const url = isLogin ? '/user/login' : '/user/register';
+            const formdata = $(this).serialize();
+
+            axios.post(url, formdata).then(response => {
+
+                    console.log(response.data);
+                    alert('success!');
+                })
+                .catch(error => {
+                    console.log(error.response.data);
+                    alert("Error Occured!");
+                });
+
+
+        });
     });
 </script>

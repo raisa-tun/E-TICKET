@@ -6,7 +6,7 @@
                                 <div class="testimonial-single">
                                     <div class="testimonial-text wow fadeInUp" data-wow-delay="0.2s">
                                         
-                                        <h2>Dhaka to Barishal</h2>
+                                        <h1>Dhaka to Barishal</h1>
                                       
                                     </div>
                                 </div>
@@ -15,14 +15,14 @@
                                 <div class="testimonial-single">
                                     <div class="testimonial-text wow fadeInUp" data-wow-delay="0.2s">
                                         
-                                        <h2>Dhaka to Sylhet</h2>
+                                        <h1>Dhaka to Sylhet</h1>
                                       
                                     </div>
                                 </div>
                                 <div class="testimonial-single">
                                     <div class="testimonial-text wow fadeInUp" data-wow-delay="0.2s">
                                         
-                                        <h2>Dhaka to Cox's Bazar</h2>
+                                        <h1>Dhaka to Cox's Bazar</h1>
                                       
                                     </div>
                                 </div>

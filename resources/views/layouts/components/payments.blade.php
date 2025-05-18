@@ -2,20 +2,20 @@
                 <div class="container text-center">
                     <div class="clients owl-carousel owl-theme">
                         <div class="single" data-wow-delay="0.2s">
-                            <h3>bkash</h3>
-                           <!-- <img src= "" alt="bkash">-->
+                            
+                            <img src= "assets/images/bkash.png" alt="bkash" style="width:70%; padding:30px">
                         </div>
                         <div class="single" data-wow-delay="0.2s">
-                        <h3>roket</h3>
-                            <!-- <img src= "" alt="bkash">-->
+                        
+                            <img src= "assets/images/robi.png" alt="robi" style="width:60%; padding:20px 40px 40px 40px" >
                         </div>
                         <div class="single" data-wow-delay="0.2s">
-                        <h3>nagad</h3>
-                           <!-- <img src= "" alt="bkash">-->
+                       
+                           <img src= "assets/images/nagad.png" alt="nagad" style="width:60%; padding:30px" >
                         </div>
                         <div class="single" data-wow-delay="0.2s">
-                        <h3>dutchBangla</h3>
-                            <!-- <img src= "" alt="bkash">-->
+                      
+                            <img src= "assets/images/mlogo.png" alt="nagad" style="width:70%; padding:30px" >
                         </div>
                        
                     </div>

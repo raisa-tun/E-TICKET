@@ -23,22 +23,22 @@ Route::get('/', function () {
 Route::get('/adminlogin', function () {
     return view('admin.layouts.login');
 });
-Route::get('/userlogin', function () {
+Route::get('/user/login', function () {
     return view('user.layouts.components.user_login_modal');
 });
 Route::resource('bus_schedule',BusScheduleController::class);
-Route::post('/adminLogin',[AdminAuthController::class,'auth'])->name('adminLogin');
-Route::post('/userLogin',[UserAuthController::class,'auth'])->name('userLogin');
-Route::post('/userRegister',[UserAuthController::class,'register'])->name('userRegister');
+Route::post('/admin/login',[AdminAuthController::class,'auth'])->name('admin.login');
+Route::post('/user/login',[UserAuthController::class,'auth'])->name('user.login');
+Route::post('/user/register',[UserAuthController::class,'register'])->name('user.register');
 //
 Route::group(['middleware' => 'adminauth'], function(){
-    Route::get('/admindashboard',[AdminAuthController::class,'index'])->name('admin');
-    Route::post('logout', [AdminAuthController::class, 'adminLogOut'])->name('adminLogout');
+    Route::get('/admin/dashboard',[AdminAuthController::class,'index'])->name('admin');
+    Route::post('logout', [AdminAuthController::class, 'adminLogOut'])->name('admin.logout');
     Route::resource('/newSchedule',BusScheduleController::class);
 });
 Route::group(['middleware' => 'auth'], function(){
-    Route::get('/user_dashboard',[UserAuthController::class,'index'])->name('user');
-    Route::post('user_logout', [UserAuthController::class, 'userLogOut'])->name('userLogout');
+    Route::get('/user/dashboard',[UserAuthController::class,'index'])->name('user');
+    Route::post('user/logout', [UserAuthController::class, 'userLogOut'])->name('user.logout');
 });
 Route::get('/check-pdo', function () {
     return extension_loaded('pdo_mysql') ? 'PDO MySQL is installed' : 'PDO MySQL is NOT installed';
