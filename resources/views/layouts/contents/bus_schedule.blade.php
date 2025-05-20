@@ -120,7 +120,7 @@
                                     <div class="page-body">
                                         <div class="row">
 
-                                            @include('layouts.components.list')
+                                            @include('layouts.components.bus_list')
                                         </div>
                                     </div>
                                 </div>

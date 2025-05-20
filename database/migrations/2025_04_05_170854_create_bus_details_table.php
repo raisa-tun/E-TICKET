@@ -22,8 +22,10 @@ return new class extends Migration
             $table->string('available_seats')->nullable();
             $table->string('start_point')->nullable();
             $table->string('end_point')->nullable();
+            $table->string('departure_time')->nullable();
             $table->string('arrival_time')->nullable();
             $table->string('ac_or_non_ac')->nullable();
+            $table->string('date')->nullable();
             $table->timestamps();
         });
     }

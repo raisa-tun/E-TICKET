@@ -1,4 +1,4 @@
-<form action="{{route('user.login')}}" method="post">
+<form id ='authform' action="{{route('user.login')}}" method="post">
     @csrf
     <div class="form-group" id="namefield" style="display:none">
         <input type="text" class="form-control" name="user_name" placeholder="Your user name...">
@@ -73,7 +73,7 @@
 
 
         });
-        $('form').on('submit', function(e) {
+        $('authform').on('submit', function(e) {
             e.preventDefault();
 
             const url = isLogin ? '/user/login' : '/user/register';

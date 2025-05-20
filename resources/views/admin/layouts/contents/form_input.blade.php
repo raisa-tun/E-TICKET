@@ -54,6 +54,9 @@
 
                     </select>
                 </div>
+                <div class="col-sm-4">
+                    <input type="date" class="form-control" name="date" placeholder="date">
+                </div>
             </div>
             <div style="display:flex; justify-content:center">
                 <button type="submit" class="btn btn-primary waves-effect">Submit</button>

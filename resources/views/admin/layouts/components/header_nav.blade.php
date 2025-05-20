@@ -24,7 +24,7 @@
                     <a class="nav-link" onclick="event.preventDefault();
                       document.getElementById('logout-form').submit();">
                         {{__('Logout')}} </a>
-                    <form id="logout-form" action="{{route('adminLogout')}}" method="post" class="hidden" style="display: none;">
+                    <form id="logout-form" action="{{route('admin.logout')}}" method="post" class="hidden" style="display: none;">
                         {{csrf_field()}}
                     </form>
                 </li>

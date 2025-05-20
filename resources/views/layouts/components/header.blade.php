@@ -40,3 +40,19 @@
         </div>
     </div>
 </nav>
+
+<script>
+
+$(document).ready(function () {          
+    
+    $('#loginTrigger').on('click', function(e){
+        
+        $('#loginModal').modal('show');
+    
+    
+   })
+  });
+
+
+
+</script>

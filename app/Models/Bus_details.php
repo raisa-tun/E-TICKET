@@ -21,7 +21,8 @@ class Bus_details extends Model
         'end_point',
         'departure_time',
         'arrival_time',
-        'ac_or_non_ac'
+        'ac_or_non_ac',
+        'date'
     ];
 
     public function bus_overview(): BelongsTo

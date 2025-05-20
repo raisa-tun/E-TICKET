@@ -25,7 +25,7 @@ class UserAuthController extends Controller
                     
  
                      //dd("logged in");
-                         return redirect('/userdashboard')->with('success','You are logged in successfully!');
+                         return redirect('/user-dashboard')->with('success','You are logged in successfully!');
                  }
                      else{
                        //  dd('error');
@@ -33,7 +33,7 @@ class UserAuthController extends Controller
                      }
                  }
      }
-     public function index(){
+    public function index(){
         return view('user.layouts.user_dashboard');
     }
 

@@ -46,9 +46,12 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', 'maglev.proxy.rlwy.net'),
+            /*'host' => env('DB_HOST', 'maglev.proxy.rlwy.net'),
             'port' => env('DB_PORT', '18816'),
-            'database' => env('DB_DATABASE', 'railway'),
+            'database' => env('DB_DATABASE', 'railway'),*/
+            'host' => env('DB_HOST', 'http://127.0.0.1:8000/'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'e-ticket'),
             'username' => env('DB_USERNAME', 'root'),
             'password' => env('DB_PASSWORD', ''),
             'unix_socket' => env('DB_SOCKET', ''),

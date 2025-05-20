@@ -49,7 +49,7 @@ jQuery(function($) {
   pagination : false
   });
 
-/* ------ jQuery for Easing min -- */
+/* ------ jQuery for Easing min 
 
   $(function() {
   $('a.page-scroll').bind('click', function(event) {
@@ -59,7 +59,25 @@ jQuery(function($) {
       }, 1500, 'easeInOutExpo');
       event.preventDefault();
   });
+});-- */
+$(function () {
+  $('a.page-scroll').on('click', function (event) {
+    event.preventDefault();
+
+    var $anchor = $(this);
+    var href = $anchor.attr('href');
+
+    // Only proceed if it's an ID selector (starts with #) and the element exists
+    if (href && href.startsWith('#') && $(href).length && $(href).offset()) {
+      $('html, body').stop().animate({
+        scrollTop: $(href).offset().top
+      }, 1500, 'easeInOutExpo');
+    } else {
+      console.warn('Invalid or missing scroll target:', href);
+    }
+  });
 });
+
 
 /* ----- Magnific Popup ----- */
 

@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>e-Ticket</title>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <!-- Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Landing page template for creative dashboard">
@@ -31,17 +32,18 @@
     <link rel="stylesheet" type="text/css" href="assets\css\style.css" media="all">
     <link rel="stylesheet" type="text/css" href="assets\css\style2.css" media="all">
       <!-- Jquery and Js Plugins -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="assets\js\jquery-2.1.1.js"></script>
+   
+    <script type="text/javascript" src="assets\js\jquery-2.1.1.js"></script>
     <script type="text/javascript" src="assets\js\bootstrap.min.js"></script>
+    <script type="text/javascript" src="libraries\bower_components\popper.js\js\popper.min.js"></script>
     <script type="text/javascript" src="assets\js\plugins.js"></script>
     <script type="text/javascript" src="assets\js\menu.js"></script>
     <script type="text/javascript" src="assets\js\custom.js"></script>
-    <!-- Popper JS -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+    <!-- Popper JS 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>-->
     <!-- Bootstrap JS 
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>-->
-    <script type="text/javascript" src="assets\js\bootstrap.min.js"></script>
+   
 </head>
 
 <body>
@@ -96,5 +98,19 @@
 
     @include('user.layouts.components.user_login_modal')
 </body>
+<script>
 
+$(document).ready(function () {          
+    
+    $('#loginTrigger').on('click', function(e){
+        
+        $('#loginModal').modal('show');
+    
+    
+   })
+  });
+
+
+
+</script>
 </html>

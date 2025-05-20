@@ -7,8 +7,8 @@
 
  <!-- Bootstrap CSS (start popup)-->
 
-<!-- Font Awesome CSS -->
-<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+<!-- Font Awesome CSS 
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>-->
 <!--<link rel='stylesheet' href="assets/css/login.css">-->
 <!--End popup-->
 <!-- jQuery -->
@@ -60,20 +60,6 @@
 
 
 
-<script>
 
-$(document).ready(function () {          
-    
-    $('#loginTrigger').on('click', function(e){
-        
-        $('#loginModal').modal('show');
-    
-    
-   })
-  });
-
-
-
-</script>
 </body>
 </html>
