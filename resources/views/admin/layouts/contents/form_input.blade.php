@@ -42,10 +42,10 @@
             </div>
             <div class="form-group row">
                 <div class="col">
-                    <input type="text" class="form-control" name="departure_time" placeholder="Departure Time">
+                    <input type="time" class="form-control" name="departure_time" placeholder="Departure Time">
                 </div>
                 <div class="col-sm-4">
-                    <input type="text" class="form-control" name="arrival_time" placeholder="Arrival Time">
+                    <input type="time" class="form-control" name="arrival_time" placeholder="Arrival Time">
                 </div>
                 <div class="col">
                     <select class="form-control" name="ac_or_non_ac" id="ac_or_non_ac">

@@ -51,7 +51,7 @@ class BusScheduleController extends Controller
             'total_seats' => $request->total_seats,
             'price' => $request->price,
             'available_seats' => $request->available_seats,
-            'starting_point' => $request->starting_point,
+            'start_point' => $request->start_point,
             'end_point' => $request->end_point,
             'departure_time' => $request->departure_time,
             'arrival_time' => $request->arrival_time,
