@@ -47,6 +47,7 @@
 
         $('.editable').on('click', function() {
 
+            e.preventDefault();
             var $this = $(this); //this var contains the reference object of .editable class
             if ($this.find('input').length > 0) {
                 return;

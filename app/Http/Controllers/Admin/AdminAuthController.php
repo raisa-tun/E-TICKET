@@ -37,6 +37,9 @@ class AdminAuthController extends Controller
     public function index(){
         return view('admin.layouts.admin_dashboard');
     }
+        public function home(){
+        return view('index');
+    }
 
     public function adminLogout(Request $request){
 
@@ -59,4 +62,7 @@ class AdminAuthController extends Controller
 
         return redirect('/')->with('success',"You're successfully created an account");
     }
+
+   
 }
+

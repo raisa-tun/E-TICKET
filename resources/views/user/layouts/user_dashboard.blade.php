@@ -9,6 +9,7 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <!-- Meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
@@ -29,6 +30,13 @@
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="libraries\assets\css\style.css">
     <link rel="stylesheet" type="text/css" href="libraries\assets\css\jquery.mCustomScrollbar.css">
+
+    <!-- Required Jquery -->
+    <script type="text/javascript" src="{{asset('libraries\bower_components\jquery\js\jquery.min.js')}}"></script>
+
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+    <script type="text/javascript" src="{{asset('libraries\bower_components\popper.js\js\popper.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('libraries\bower_components\bootstrap\js\bootstrap.min.js')}}"></script>
 </head>
 <!-- Menu sidebar static layout -->
 
@@ -77,15 +85,15 @@
 
             <nav class="navbar header-navbar pcoded-header">
                 <div class="navbar-wrapper">
-                @include('admin.layouts.components.header_nav')
+                    @include('admin.layouts.components.header_nav')
                     <div class="navbar-logo">
                         <a class="mobile-menu" id="mobile-collapse" href="#!">
                             <i class="feather icon-menu"></i>
                         </a>
                         <a href="">
-                           Show More
+                            Show More
                         </a>
-                       
+
                     </div>
 
 
@@ -185,12 +193,7 @@
 </div>
 <![endif]-->
     <!-- Warning Section Ends -->
-    <!-- Required Jquery -->
-    <script type="text/javascript" src="{{asset('libraries\bower_components\jquery\js\jquery.min.js')}}"></script>
 
-    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
-    <script type="text/javascript" src="{{asset('libraries\bower_components\popper.js\js\popper.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('libraries\bower_components\bootstrap\js\bootstrap.min.js')}}"></script>
     <!-- jquery slimscroll js -->
     <script type="text/javascript" src="{{asset('libraries\bower_components\jquery-slimscroll\js\jquery.slimscroll.js')}}"></script>
     <!-- modernizr js -->

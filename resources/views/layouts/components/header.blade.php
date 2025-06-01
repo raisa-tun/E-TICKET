@@ -15,22 +15,22 @@
                     <a class="nav-link page-scroll" href="#services">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="{{route('bus_schedule.index')}}">Bus Schedule</a>
+                    <a class="nav-link" href="{{route('bus_schedule.index')}}">Bus Schedule</a>
                 </li>
                
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" id="loginTrigger">Login</a>
+                    <a class="nav-link" id="loginTrigger">Login</a>
                 </li>
                 
-                @if(auth()->guard('admin')->check())
+                @if(auth()->check())
                 <li class="nav-item">
                     <a class="nav-link" onclick="event.preventDefault();
                       document.getElementById('logout-form').submit();">
                         {{__('Logout')}} </a>
-                    <form id="logout-form" action="{{route('adminLogout')}}" method="post" class="hidden" style="display: none;">
+                    <form id="logout-form" action="{{route('user.logout')}}" method="post" class="hidden" style="display: none;">
                         {{csrf_field()}}
                     </form>
                 </li>
@@ -46,7 +46,7 @@
 $(document).ready(function () {          
     
     $('#loginTrigger').on('click', function(e){
-        
+        e.preventDefault();
         $('#loginModal').modal('show');
     
     

@@ -1,5 +1,5 @@
-<form action="{{route('search.schedule')}}" method=GET>
-<div class="col-lg-12">
+<form class="search" action="{{route('search.schedule')}}" method=GET>
+<div class="col-lg-12 ">
     <div class="card card-main">
 
         <div class="card-block">
@@ -16,7 +16,7 @@
           
                     <button type="submit" class="btn btn-primary">Search</button>
                 
-            </div>
+        </div>
             
         </div>
     </div>
