@@ -57,7 +57,7 @@
                                 <tr>
                                     <td class="b-none">
                                         <a href="#!" class="align-middle">
-                                            <img src="libraries\assets\images\avatar-2.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
+                                            <img src="\libraries\assets\images\avatar-2.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
                                             <div class="d-inline-block">
                                                 <h6>Jeny William</h6>
                                                 <p class="text-muted m-b-0">Graphic Designer</p>
@@ -68,7 +68,7 @@
                                 <tr>
                                     <td class="b-none">
                                         <a href="#!" class="align-middle">
-                                            <img src="libraries\assets\images\avatar-1.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
+                                            <img src="\libraries\assets\images\avatar-1.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
                                             <div class="d-inline-block">
                                                 <h6>John Deo</h6>
                                                 <p class="text-muted m-b-0">Web Designer</p>

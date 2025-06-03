@@ -8,11 +8,7 @@
     </div>
 </div>
 <div id="modal-backdrop" style="display: none;"></div>
-    <!-- i18next.min.js -->
-    <script type="text/javascript" src="libraries\bower_components\i18next\js\i18next.min.js"></script>
-    <script type="text/javascript" src="libraries\bower_components\i18next-xhr-backend\js\i18nextXHRBackend.min.js"></script>
-    <script type="text/javascript" src="libraries\bower_components\i18next-browser-languagedetector\js\i18nextBrowserLanguageDetector.min.js"></script>
-    <script type="text/javascript" src="libraries\bower_components\jquery-i18next\js\jquery-i18next.min.js"></script>
+
    
 <script>
   $(document).ready(function () {

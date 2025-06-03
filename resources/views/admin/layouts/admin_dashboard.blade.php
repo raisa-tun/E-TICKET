@@ -18,24 +18,24 @@
     <meta name="keywords" content="Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
     <meta name="author" content="#">
     <!-- Favicon icon 
-    <link rel="icon" href="libraries\assets\images\favicon.ico" type="image/x-icon">-->
+    <link rel="icon" href="\libraries\assets\images\favicon.ico" type="image/x-icon">-->
     <!-- Google font
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">-->
     <!-- Required Fremwork -->
-    <link rel="stylesheet" type="text/css" href="libraries\bower_components\bootstrap\css\bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/libraries/bower_components/bootstrap/css/bootstrap.min.css">
     <!-- radial chart.css -->
-    <link rel="stylesheet" href="libraries\assets\pages\chart\radial\css\radial.css" type="text/css" media="all">
+    <link rel="stylesheet" href="\libraries\assets\pages\chart\radial\css\radial.css" type="text/css" media="all">
     <!-- feather Awesome -->
-    <link rel="stylesheet" type="text/css" href="libraries\assets\icon\feather\css\feather.css">
+    <link rel="stylesheet" type="text/css" href="\libraries\assets\icon\feather\css\feather.css">
     <!-- Style.css -->
-    <link rel="stylesheet" type="text/css" href="libraries\assets\css\style.css">
-    <link rel="stylesheet" type="text/css" href="libraries\assets\css\jquery.mCustomScrollbar.css">
-    <link rel="stylesheet" type="text/css" href="libraries\assets\css\style2.css">
+    <link rel="stylesheet" type="text/css" href="\libraries\assets\css\style.css">
+    <link rel="stylesheet" type="text/css" href="\libraries\assets\css\jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css" href="\libraries\assets\css\style2.css">
     <!--jQuery-->
-    <script type="text/javascript" src="libraries\bower_components\jquery\js\jquery.min.js"></script>
+    <script type="text/javascript" src="\libraries\bower_components\jquery\js\jquery.min.js"></script>
     <!--<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
-    <script type="text/javascript" src="libraries\bower_components\popper.js\js\popper.min.js"></script>
-    <script type="text/javascript" src="libraries\bower_components\bootstrap\js\bootstrap.min.js"></script>
+    <script type="text/javascript" src="\libraries\bower_components\popper.js\js\popper.min.js"></script>
+    <script type="text/javascript" src="\libraries\bower_components\bootstrap\js\bootstrap.min.js"></script>
    
 </head>
 <!-- Menu sidebar static layout -->
@@ -96,7 +96,7 @@
                                 <i class="feather icon-menu"></i>
                             </a>
 
-                            <a class="navbar-brand page-scroll" href="#main"><img src="{{ asset('assets/images/logo.png') }}" alt="adminity Logo"></a>
+                            <a class="navbar-brand page-scroll" href="#main"><img src="/assets/images/logo.png" alt="adminity Logo"></a>
 
                         </div>
                         <div class="col-lg-10 col-md-12 text-lg-end text-right navbar-associate">
@@ -209,30 +209,35 @@
     <!-- Required Jquery -->
     
      <!-- jquery slimscroll js-->
-    <script type="text/javascript" src="libraries\bower_components\jquery-slimscroll\js\jquery.slimscroll.js"></script>
+    <script type="text/javascript" src="\libraries\bower_components\jquery-slimscroll\js\jquery.slimscroll.js"></script>
     <!-- modernizr js -->
-    <script type="text/javascript" src="libraries\bower_components\modernizr\js\modernizr.js"></script>
-    <script type="text/javascript" src="libraries\bower_components\modernizr\js\css-scrollbars.js"></script>
+    <script type="text/javascript" src="\libraries\bower_components\modernizr\js\modernizr.js"></script>
+    <script type="text/javascript" src="\libraries\bower_components\modernizr\js\css-scrollbars.js"></script>
     
     <!-- Chart js -->
-    <script type="text/javascript" src="libraries\bower_components\chart.js\js\Chart.js"></script>
+    <script type="text/javascript" src="\libraries\bower_components\chart.js\js\Chart.js"></script>
     <!-- Google map js
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true')}}"></script>
-    <script type="text/javascript" src="libraries\assets\pages\google-maps\gmaps.js"></script>-->
+    <script type="text/javascript" src="\libraries\assets\pages\google-maps\gmaps.js"></script>-->
     <!-- gauge js -->
-    <script src="libraries\assets\pages\widget\gauge\gauge.min.js"></script>
-    <script src="libraries\assets\pages\widget\amchart\amcharts.js"></script>
-    <script src="libraries\assets\pages\widget\amchart\serial.js"></script>
-    <script src="libraries\assets\pages\widget\amchart\gauge.js"></script>
-    <script src="libraries\assets\pages\widget\amchart\pie.js"></script>
-    <script src="libraries\assets\pages\widget\amchart\light.js"></script>
+    <script src="\libraries\assets\pages\widget\gauge\gauge.min.js"></script>
+    <script src="\libraries\assets\pages\widget\amchart\amcharts.js"></script>
+    <script src="\libraries\assets\pages\widget\amchart\serial.js"></script>
+    <script src="\libraries\assets\pages\widget\amchart\gauge.js"></script>
+    <script src="\libraries\assets\pages\widget\amchart\pie.js"></script>
+    <script src="\libraries\assets\pages\widget\amchart\light.js"></script>
     <!-- Custom js -->
-    <script src="libraries\assets\js\pcoded.min.js"></script>
-    <script src="libraries\assets\js\vartical-layout.min.js"></script>
-    <script src="libraries\assets\js\jquery.mCustomScrollbar.concat.min.js"></script>
-    <script type="text/javascript" src="libraries\assets\pages\dashboard\crm-dashboard.min.js"></script>
-    <script type="text/javascript" src="libraries\assets\js\script.js"></script>
+    <script src="\libraries\assets\js\pcoded.min.js"></script>
+    <script src="\libraries\assets\js\vartical-layout.min.js"></script>
+    <script src="\libraries\assets\js\jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="\libraries\assets\pages\dashboard\crm-dashboard.min.js"></script>
+    <script type="text/javascript" src="\libraries\assets\js\script.js"></script>
+        <!-- i18next.min.js -->
+    <script type="text/javascript" src="\libraries\bower_components\i18next\js\i18next.min.js"></script>
+    <script type="text/javascript" src="\libraries\bower_components\i18next-xhr-backend\js\i18nextXHRBackend.min.js"></script>
+    <script type="text/javascript" src="\libraries\bower_components\i18next-browser-languagedetector\js\i18nextBrowserLanguageDetector.min.js"></script>
+    <script type="text/javascript" src="\libraries\bower_components\jquery-i18next\js\jquery-i18next.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
 

@@ -34,8 +34,8 @@ Route::post('/user/login',[UserAuthController::class,'auth'])->name('user.login'
 Route::post('/user/register',[UserAuthController::class,'register'])->name('user.register');
 //
 Route::group(['middleware' => 'adminauth'], function(){
-    Route::get('/admin-dashboard',[AdminAuthController::class,'index'])->name('admin');
-    Route::get('/admin-dashboard/home',[AdminAuthController::class,'home'])->name('admin.home');
+    Route::get('/admin/dashboard',[AdminAuthController::class,'index'])->name('admin');
+    Route::get('/admin/home',[AdminAuthController::class,'home'])->name('admin.home');
     Route::post('admin/logout', [AdminAuthController::class, 'adminLogOut'])->name('admin.logout');
     Route::resource('/newSchedule',BusScheduleController::class);
 });
