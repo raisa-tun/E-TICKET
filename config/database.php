@@ -49,7 +49,7 @@ return [
             /*'host' => env('DB_HOST', 'maglev.proxy.rlwy.net'),
             'port' => env('DB_PORT', '18816'),
             'database' => env('DB_DATABASE', 'railway'),*/
-            'host' => env('DB_HOST', 'http://127.0.0.1:8000/'),
+            'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'e-ticket'),
             'username' => env('DB_USERNAME', 'root'),

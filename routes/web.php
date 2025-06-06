@@ -32,6 +32,13 @@ Route::resource('bus_schedule',BusScheduleController::class);
 Route::post('/admin/login',[AdminAuthController::class,'auth'])->name('admin.login');
 Route::post('/user/login',[UserAuthController::class,'auth'])->name('user.login');
 Route::post('/user/register',[UserAuthController::class,'register'])->name('user.register');
+
+
+Route::put('/bus_schedule/{id}', function ($id) {
+    return response()->json(['hit' => true, 'id' => $id]);
+});
+
+
 //
 Route::group(['middleware' => 'adminauth'], function(){
     Route::get('/admin/dashboard',[AdminAuthController::class,'index'])->name('admin');
@@ -46,3 +53,12 @@ Route::group(['middleware' => 'auth'], function(){
 /*Route::get('/check-pdo', function () {
     return extension_loaded('pdo_mysql') ? 'PDO MySQL is installed' : 'PDO MySQL is NOT installed';
 });*/
+
+Route::get('/pdo-test', function () {
+    try {
+        $pdo = new PDO('mysql:host=127.0.0.1;dbname=e-ticket', 'root', '');
+        return 'PDO connection successful!';
+    } catch (PDOException $e) {
+        return 'PDO connection failed: ' . $e->getMessage();
+    }
+});

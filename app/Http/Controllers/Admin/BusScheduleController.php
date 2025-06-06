@@ -58,7 +58,7 @@ class BusScheduleController extends Controller
             'ac_or_non_ac' => $request->ac_or_non_ac,
 
         ]);
-        return redirect('/admindashboard');
+        return redirect('/admin/dashboard');
     }
 
     /**
@@ -83,7 +83,7 @@ class BusScheduleController extends Controller
     public function update(Request $request, string $id)
     {
         //
-        // dd("kjhks");
+        dd($request);
         $bus_schedule = Bus_overview::with('details')->findOrFail($id);
         $allowed = ['bus_brand_name', 'total_bus_no', 'available_bus_no'];
         if (!in_array($request->field, $allowed)) {

@@ -23,7 +23,7 @@
                     <input type="text" class="form-control" name="code_no" placeholder="Code no.">
                 </div>
                 <div class="col-sm-4">
-                    <input type="text" class="form-control" name="total_bus_no" placeholder="Total Seats">
+                    <input type="text" class="form-control" name="total_seats" placeholder="Total Seats">
                 </div>
                 <div class="col">
                     <input type="text" class="form-control" name="price" placeholder="Price">

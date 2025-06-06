@@ -45,7 +45,7 @@
             }
         });
 
-        $('.editable').on('click', function() {
+        $('.editable').on('click', function(e) {
 
             e.preventDefault();
             var $this = $(this); //this var contains the reference object of .editable class
@@ -57,6 +57,7 @@
             var input = $('<input type="text" class="inline-input">').val(currentText);
             $this.empty().append(input);
             input.focus();
+            console.log(input);
 
 
 
