@@ -9,7 +9,7 @@
             </ul>
             <ul class="navbar-nav my-2 my-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="/admin-dashboard/home">Home</a>
+                    <a class="nav-link page-scroll" href="/admin/home">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#services">Blog</a>

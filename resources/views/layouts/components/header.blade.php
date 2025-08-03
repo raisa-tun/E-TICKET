@@ -21,16 +21,17 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
                 </li>
+                @if(!auth()->guard('web')->check() && !auth()->guard('admin')->check())
                 <li class="nav-item">
                     <a class="nav-link" id="loginTrigger">Login</a>
                 </li>
                 
-                @if(auth()->check())
+                @else
                 <li class="nav-item">
                     <a class="nav-link" onclick="event.preventDefault();
                       document.getElementById('logout-form').submit();">
                         {{__('Logout')}} </a>
-                    <form id="logout-form" action="{{route('user.logout')}}" method="post" class="hidden" style="display: none;">
+                    <form id="logout-form" action="{{ auth()->guard('admin')->check() ? route('admin.logout') : route('user.logout') }}" method="post" class="hidden" style="display: none;">
                         {{csrf_field()}}
                     </form>
                 </li>

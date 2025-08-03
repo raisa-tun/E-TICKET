@@ -25,7 +25,7 @@ class AdminAuthController extends Controller
                    
 
                     //dd("logged in");
-                        return redirect('/admin/home')->with('success','You are logged in successfully!');
+                        return redirect('/admin/dashboard')->with('success','You are logged in successfully!');
                 }
                     else{
                       //  dd('error');

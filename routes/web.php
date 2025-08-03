@@ -47,9 +47,11 @@ Route::group(['middleware' => 'adminauth'], function(){
     Route::resource('/newSchedule',BusScheduleController::class);
 });
 Route::group(['middleware' => 'auth'], function(){
-    Route::get('/user-dashboard',[UserAuthController::class,'index'])->name('user.dashboard');
+  //  Route::get('/user-dashboard',[UserAuthController::class,'index'])->name('user.dashboard');
     Route::post('user/logout', [UserAuthController::class, 'userLogOut'])->name('user.logout');
 });
+
+Route::get('/user-dashboard',[UserAuthController::class,'index'])->name('user.dashboard');
 /*Route::get('/check-pdo', function () {
     return extension_loaded('pdo_mysql') ? 'PDO MySQL is installed' : 'PDO MySQL is NOT installed';
 });*/
@@ -61,4 +63,7 @@ Route::get('/pdo-test', function () {
     } catch (PDOException $e) {
         return 'PDO connection failed: ' . $e->getMessage();
     }
+});
+Route::get('/test-key', function () {
+    return config('app.key');
 });

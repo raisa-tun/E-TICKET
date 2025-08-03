@@ -45,7 +45,7 @@
             }
         });
 
-        $('.editable').on('click', function(e) {
+       /* $('.editable').on('click', function(e) {
 
             e.preventDefault();
             var $this = $(this); //this var contains the reference object of .editable class
@@ -92,7 +92,71 @@
                 }
             });
         });
+*/
 
+      // When clicking Edit button
+    $('.edit-button').on('click', function() {
+        var $row = $(this).closest('.row');
+
+        // For each editable field, replace text with input field
+        $row.find('.editable').each(function() {
+            var $field = $(this);
+            if ($field.find('input').length === 0) { // Avoid duplicate inputs
+                var currentText = $field.text().trim();
+                var input = $('<input type="text" class="inline-input form-control" style="min-width:100px;">').val(currentText);
+                $field.data('original-text', currentText); // store original text if needed
+                $field.empty().append(input);
+            }
+        });
+
+        // Show Save button, hide Edit button
+        $row.find('.edit-button').hide();
+        $row.find('.save-button').show();
+
+        // Focus the first input
+        $row.find('.editable input').first().focus();
+    });
+
+    // When clicking Save button
+    $('.save-button').on('click', function() {
+        var $row = $(this).closest('.row');
+        var id = $row.data('id');
+        var updates = {};
+
+        // For each editable field, get input value and replace input with text
+        $row.find('.editable').each(function() {
+            var $field = $(this);
+            var input = $field.find('input');
+            if (input.length) {
+                var newValue = input.val().trim();
+                var fieldName = $field.data('field');
+
+                // Replace input with text
+                $field.empty().text(newValue);
+
+                // Store for ajax update
+                updates[fieldName] = newValue;
+            }
+        });
+
+        // Show Edit button, hide Save button
+        $row.find('.save-button').hide();
+        $row.find('.edit-button').show();
+
+        // Send AJAX PUT with all updated fields at once
+        $.ajax({
+            url: '/bus_schedule/' + id,
+            type: 'PUT',
+            data: updates,
+            success: function(response) {
+                console.log('Updated successfully:', response);
+            },
+            error: function(err) {
+                console.error('Update error:', err);
+                alert('Failed to update data, please try again.');
+            }
+        });
+    });
         $(".delete-button").on("click", function() {
 
 

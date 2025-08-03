@@ -80,10 +80,10 @@ class BusScheduleController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+   /* public function update(Request $request, string $id)
     {
         //
-        dd($request);
+       // dd($request);
         $bus_schedule = Bus_overview::with('details')->findOrFail($id);
         $allowed = ['bus_brand_name', 'total_bus_no', 'available_bus_no'];
         if (!in_array($request->field, $allowed)) {
@@ -100,7 +100,56 @@ class BusScheduleController extends Controller
         }
 
         return response()->json(['success' => true]);
+    }*/
+        public function update(Request $request, string $id)
+{
+    // Find the bus schedule and related details
+    $bus_schedule = Bus_overview::with('details')->findOrFail($id);
+
+    // Define which fields belong to Bus_overview model, which belong to details
+    $allowedBusOverviewFields = ['bus_brand_name', 'total_bus_no', 'available_bus_no'];
+    
+    // Extract only known fields from request input
+    $input = $request->only([
+        'bus_brand_name',
+        'total_bus_no',
+        'available_bus_no',
+        'code_no',
+        'departure_time',
+        'start_point',
+        'arrival_time',
+        'end_point',
+        'price'
+    ]);
+    
+    // Update Bus_overview fields if present in input
+    foreach ($allowedBusOverviewFields as $field) {
+        if (array_key_exists($field, $input)) {
+            $bus_schedule->{$field} = $input[$field];
+        }
     }
+    $bus_schedule->save();
+
+    // Update the related details fields
+    $details = $bus_schedule->details->first(); // Assuming only one detail related
+    if ($details) {
+        // Fields that belong to details model
+        $detailsFields = ['code_no', 'departure_time', 'start_point', 'arrival_time', 'end_point', 'price'];
+
+        foreach ($detailsFields as $field) {
+            if (array_key_exists($field, $input)) {
+                $details->{$field} = $input[$field];
+            }
+        }
+        $details->save();
+    } else {
+        // Optionally create details if not exist or return error
+        return response()->json(['error' => 'No bus details found for this bus overview.'], 404);
+    }
+
+    return response()->json(['success' => true]);
+}
+
 
     /**
      * Remove the specified resource from storage.
