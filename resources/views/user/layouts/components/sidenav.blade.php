@@ -28,7 +28,7 @@
         </ul>
         <div class="pcoded-navigatio-lavel">Support</div>
         <ul class="pcoded-item pcoded-left-item">
-            <li class="">
+            <li class="">+++++
                 <a href="http://html.codedthemes.com/Adminty/doc" target="_blank">
                     <span class="pcoded-micon"><i class="feather icon-monitor"></i></span>
                     <span class="pcoded-mtext">Documentation</span>

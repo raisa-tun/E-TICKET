@@ -56,6 +56,7 @@ class BusScheduleController extends Controller
             'departure_time' => $request->departure_time,
             'arrival_time' => $request->arrival_time,
             'ac_or_non_ac' => $request->ac_or_non_ac,
+            'date'=> $request->date
 
         ]);
         return redirect('/admin/dashboard');

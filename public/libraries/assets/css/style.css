@@ -11027,7 +11027,7 @@ table tbody .border-bottom-info td {
     left: 0
 }
 
-.selector-toggle {
+/**.selector-toggle {
     position: relative
 }
 
@@ -11080,7 +11080,7 @@ table tbody .border-bottom-info td {
     content: "\e8f6";
     -webkit-animation: mymove 0s infinite linear;
     animation: mymove 0s infinite linear
-}
+}**/
 
 #styleSelector .nav-tabs {
     margin-bottom: 20px;
