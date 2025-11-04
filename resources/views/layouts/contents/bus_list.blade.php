@@ -13,7 +13,7 @@
         @foreach($bus_data as $bus_data_each)
             @foreach($bus_data_each->details as $bus_details_each)
                 <li>
-                    @include('layouts.components.bus_list_item', [
+                    @include('layouts.contents.bus_list_item', [
                         'id' => $bus_data_each->id,
                         'brand' => $bus_data_each->bus_brand_name,
                         'code' => $bus_details_each->code_no,

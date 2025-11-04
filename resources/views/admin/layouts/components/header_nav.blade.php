@@ -15,7 +15,7 @@
                     <a class="nav-link page-scroll" href="#services">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="{{route('bus_schedule.index')}}">Bus Schedule</a>
+                    <a class="nav-link page-scroll" href="{{route('admin.bus_schedule')}}">Bus Schedule</a>
                 </li>
                 
 

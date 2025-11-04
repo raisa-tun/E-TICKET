@@ -88,7 +88,7 @@
 
             <nav class="navbar header-navbar pcoded-header">
                 <div class="navbar-wrapper">
-                    @include('admin.layouts.components.header_nav')
+                    @include('layouts.components.header')
                     <div class="row section-separator">
 
 
@@ -120,7 +120,7 @@
                                     <div class="page-body">
                                         <div class="row">
 
-                                            @include('layouts.components.bus_list')
+                                            @include('layouts.contents.bus_list')
                                         </div>
                                     </div>
                                 </div>

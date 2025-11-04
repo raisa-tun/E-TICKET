@@ -21,7 +21,7 @@ class BusScheduleController extends Controller
         //dd($bus_details->code_no);
 
         // }
-        return view('layouts.contents.bus_schedule', compact('bus_data'));
+        return view('layouts.pages.bus_schedule', compact('bus_data'));
     }
 
     /**

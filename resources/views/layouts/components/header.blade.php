@@ -15,7 +15,7 @@
                     <a class="nav-link page-scroll" href="#services">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('bus_schedule.index')}}">Bus Schedule</a>
+                    <a class="nav-link" href="{{ auth()->guard('admin')->check() ? route('admin.bus_schedule') : route('bus_schedule.index') }}">Bus Schedule</a>
                 </li>
                
                 <li class="nav-item">
@@ -34,6 +34,9 @@
                     <form id="logout-form" action="{{ auth()->guard('admin')->check() ? route('admin.logout') : route('user.logout') }}" method="post" class="hidden" style="display: none;">
                         {{csrf_field()}}
                     </form>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="{{ auth()->guard('admin')->check() ? route('admin.dashboard') : route('user.dashboard') }}">Dashboard</a>
                 </li>
                 @endif
                 

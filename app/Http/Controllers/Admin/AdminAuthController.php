@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use App\Models\User;
+use App\Models\Bus_overview;
+use App\Models\Bus_details;
 
 class AdminAuthController extends Controller
 {
@@ -37,10 +39,13 @@ class AdminAuthController extends Controller
     public function index(){
         return view('admin.layouts.admin_dashboard');
     }
-        public function home(){
+    public function home(){
         return view('index');
     }
-
+    public function bus_schedule(){
+        $bus_data = Bus_overview::with('details')->get();
+        return view('layouts.pages.bus_schedule', compact('bus_data'));
+    }
     public function adminLogout(Request $request){
 
         auth()->guard('admin')->logout();

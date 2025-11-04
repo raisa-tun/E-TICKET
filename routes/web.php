@@ -41,9 +41,10 @@ Route::put('/bus_schedule/{id}', function ($id) {
 
 //
 Route::group(['middleware' => 'adminauth'], function(){
-    Route::get('/admin/dashboard',[AdminAuthController::class,'index'])->name('admin');
+    Route::get('/admin/dashboard',[AdminAuthController::class,'index'])->name('admin.dashboard');
     Route::get('/admin/home',[AdminAuthController::class,'home'])->name('admin.home');
     Route::post('admin/logout', [AdminAuthController::class, 'adminLogOut'])->name('admin.logout');
+    Route::get('/admin/bus_schedule',[AdminAuthController::class,'bus_schedule'])->name('admin.bus_schedule');
     Route::resource('/newSchedule',BusScheduleController::class);
 });
 Route::group(['middleware' => 'auth'], function(){
